@@ -8,7 +8,7 @@ ${BASE_URL}   http://localhost:9292
 Scrumprimer Links
     [Template]    Check Text Exists In Path
     [Tags]	developing
-    http://localhost:9292/	Home
+    http://scrumprimer.org/	Home
 
 *** Keywords ***
 Check Text Exists In Path
