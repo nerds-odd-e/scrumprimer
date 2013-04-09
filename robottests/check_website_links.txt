@@ -2,18 +2,18 @@
 Library   Selenium2Library
 
 *** Variables ***
-${BASE_URL}   http://localhost:9292
+${BASE_URL}   http://www.scrumprimer.org
 
 *** Test Cases ***
 Scrumprimer Links
     [Template]    Check Text Exists In Path
     [Tags]	developing
-    http://scrumprimer.org/	Home
+    /     Current Version
 
 *** Keywords ***
 Check Text Exists In Path
-    [Arguments]  ${url}   ${text}
-    Open URL    ${url}
+    [Arguments]  ${path}   ${text}
+    Open Page For Path    ${path}
     Check Text Exist    ${text}
     Close Page
 
@@ -21,9 +21,10 @@ Close Page
     [Arguments]
     Close Browser
 
-Open URL
+Open Page For Path
     [Arguments]    ${path}
-    Open Browser    ${path}
+    ${url}=  Catenate  SEPARATOR=  ${BASE_URL}  ${path}
+    Open Browser    ${url}
 
 Check Text Exist
     [Arguments]  ${text}
