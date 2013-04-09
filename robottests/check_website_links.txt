@@ -17,11 +17,6 @@ Scrumprimer Links
     /#contact    Check Text Exist    Feedback
     [Teardown]    Close Browser
 
-Try To Check Image Exist
-    [Setup]    Open Browser    ${BASE_URL}
-    Page Should Contain Image    scrumprimerlogo.png
-    [Teardown]    Close Browser
-
 *** Keywords ***
 Check Text Exists In Path
     [Arguments]  ${path}    ${custom_keyword}    ${text}
