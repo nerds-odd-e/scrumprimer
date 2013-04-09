@@ -11,8 +11,8 @@ rvm:
 python:
   - "2.7"
 install: 
-  - pip install robotframework
-  - pip install robotframework-selenium2library
+  - sudo pip install robotframework
+  - sudo pip install robotframework-selenium2library
 
 script: 
   - pybot --noncritical "developing" robottests
