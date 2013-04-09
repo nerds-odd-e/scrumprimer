@@ -1,6 +1,6 @@
 require_relative "../../scrumprimer"
-require "Capybara"
-require "Capybara/cucumber"
+require "capybara"
+require "capybara/cucumber"
 require "rspec"
 require "rack/test"
 
