@@ -2,7 +2,7 @@
 Library   Selenium2Library
 
 *** Variables ***
-${BASE_URL}   http://www.scrumprimer.org
+${BASE_URL}   http://localhost:9292
 
 *** Test Cases ***
 Scrumprimer Links
@@ -10,11 +10,11 @@ Scrumprimer Links
     [Template]    Check Text Exists In Path
     [Tags]	developing
     /     Check Image Exist     scrumprimerlogo.png
-    /#translation     Check Text Exist    Scrum Primer Translations
-    /#anime    Check Image Exist    overview/anime_scrum_overview_small.png
-    /#about    Check Text Exist    Scrum Primer Creation
-    /#overview    Check Image Exist    overview/overview.png
-    /#contact    Check Text Exist    Feedback
+    /translations     Check Text Exist    Scrum Primer Translations
+    /overview    Check Image Exist    overview/overview.png
+    #/anime    Check Image Exist    overview/anime_scrum_overview_small.png
+    #/about    Check Text Exist    Scrum Primer Creation
+    #/contact    Check Text Exist    Feedback
     [Teardown]    Close Browser
 
 *** Keywords ***
