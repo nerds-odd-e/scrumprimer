@@ -1,5 +1,6 @@
 *** Settings ***
-Library       Selenium2Library  timeout=20sec
+Resource      resource.txt
+
 
 *** Variables ***
 ${MESSAGE}    Hello, world!
@@ -7,7 +8,7 @@ ${MESSAGE}    Hello, world!
 *** Test Cases ***
 My Test
     [Tags]  developing
-    Open Browser  http://www.scrumprimer.org
+    Open Browser  ${HOME}  ${BROWSER}
     Page Should Contain  Current Version
     [Teardown]  Close Browser
 
