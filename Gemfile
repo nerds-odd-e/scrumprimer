@@ -1,10 +1,7 @@
 gem "sinatra"
-gem "shotgun"
 gem "cucumber"
 gem "capybara"
 gem "rspec"
-
-group :test do
+group :assets do
 	gem "rake"
-	gem "rake-test"
 end
