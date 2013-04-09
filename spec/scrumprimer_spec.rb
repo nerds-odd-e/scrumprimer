@@ -12,12 +12,8 @@ describe "Scrum Primer Basic Specs" do
   
   it "is able to get to the basic English page at the root" do
     visit '/'
-    puts page.all(:xpath, "id('home')")[0].value
-    # /x:div[2]/x:h4")
-    # puts page.all(:xpath, "id('translation')")[0].visible?
-    # puts find(:css, "div.tab-pane[contains(@class, 'active')]")  
-    # page.should have_xpath()
     page.should have_content "Current Version"
+# This test should fail at the moment. How? 
   end
     
 end
