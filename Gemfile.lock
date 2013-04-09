@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     builder (3.2.0)
     capybara (2.0.3)
@@ -27,6 +28,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.0.4)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -41,8 +43,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
-    shotgun (0.9)
-      rack (>= 1.0)
     sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
@@ -58,6 +58,6 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
+  rake
   rspec
-  shotgun
   sinatra

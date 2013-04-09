@@ -8,11 +8,11 @@ Feature: Viewer visits the Pages
   Then I should see <Content>
 
   Examples:
-   | URL 			| Content        			   |
-   | "/"   			| "Scrum Primer" 			   |
-   | "/#transation" | "Scrum Primer Translations"  |
-   | "/#about"      | "Scrum Primer Creation"      |
-   | "/#contact"    | "Feedback"                   |   
+   | URL 			 | Content        			   |
+   | "/"   			 | "Scrum Primer" 			   |
+   | "/translations" | "Scrum Primer Translations"  |
+   | "/about"        | "Scrum Primer Creation"      |
+   | "/contact"      | "Feedback"                   |   
 
    Scenario: View Scrum Primer Logo
     Given I am on the home page
