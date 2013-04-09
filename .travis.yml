@@ -1,5 +1,8 @@
+language: ruby
+rvm:
+  - 1.9.3
 language: python
 python:
   - "2.7"
-install: PLEASE CHANGE ME -- yes we will
-script:  PLEASE CHANGE ME
+install: pip install robotframework
+script:  pybot robottests
