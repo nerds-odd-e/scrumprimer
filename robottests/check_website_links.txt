@@ -11,6 +11,8 @@ Scrumprimer Links
     [Tags]	developing
     /     Current Version
     /#translation    Scrum Primer Translations
+    /#about    Scrum Primer Creation
+    /#contact    Feedback
     [Teardown]    Close Browser
 
 *** Keywords ***
