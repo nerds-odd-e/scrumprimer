@@ -1,0 +1,31 @@
+*** Settings ***
+Library   Selenium2Library
+
+*** Variables ***
+${BASE_URL}   http://www.scrumprimer.org
+
+*** Test Cases ***
+Scrumprimer Links
+    [Template]    Check Text Exists In Path
+    [Tags]	developing
+    /     Current Version
+
+*** Keywords ***
+Check Text Exists In Path
+    [Arguments]  ${path}   ${text}
+    Open Page For Path    ${path}
+    Check Text Exist    ${text}
+    Close Page
+
+Close Page
+    [Arguments]
+    Close Browser
+
+Open Page For Path
+    [Arguments]    ${path}
+    ${url}=  Catenate  SEPARATOR=  ${BASE_URL}  ${path}
+    Open Browser    ${url}
+
+Check Text Exist
+    [Arguments]  ${text}
+    Page Should Contain  ${text}

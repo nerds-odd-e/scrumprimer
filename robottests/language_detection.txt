@@ -1,0 +1,13 @@
+*** Settings ***
+Library       Selenium2Library  timeout=20sec
+
+*** Variables ***
+${MESSAGE}    Hello, world!
+
+*** Test Cases ***
+My Test
+    [Tags]  developing
+    Open Browser  http://www.scrumprimer.org
+    Page Should Contain  Current Version
+    [Teardown]  Close Browser
+
