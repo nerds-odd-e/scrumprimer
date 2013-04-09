@@ -1,5 +1,4 @@
 GEM
-  remote: http://rubygems.org/
   specs:
     builder (3.2.0)
     capybara (2.0.3)

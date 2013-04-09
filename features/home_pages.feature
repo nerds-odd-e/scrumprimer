@@ -2,7 +2,15 @@ Feature: Viewer visits the Home Page
  In order to read the page
  As a viewer
  I want to see the home page of scrum primer
- 
- Scenario: View home page
-  Given I am on the home page
-  Then I should see "scrumprimer.png" in the link 
+  
+ Scenario Outline: View home page
+  Given I am on the <URL>
+  Then I should see <Content>
+
+  Examples:
+   | URL 	| Content        |
+   | "/"   	| "Scrum Primer" |
+
+   Scenario: View Scrum Primer Logo
+    Given I am on the home page
+    Then Page should contains "scrumprimerlogo.png"  
