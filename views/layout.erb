@@ -53,7 +53,7 @@
     <script>
 
 		$(function () {
-			var activeTab = $('[href=' + <%= @current_page %> + ']');
+			var activeTab = $('[href=' + location.hash + ']');
 			activeTab && activeTab.tab('show');			
 			
 		});
