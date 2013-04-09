@@ -8,7 +8,6 @@ ${BASE_URL}   http://localhost:9292
 Scrumprimer Links
     [Setup]     Open Browser    ${BASE_URL}
     [Template]    Check Text Exists In Path
-    [Tags]	developing
     /     Check Image Exist     scrumprimerlogo.png
     /translations     Check Text Exist    Scrum Primer Translations
     /overview    Check Image Exist    overview/overview.png
