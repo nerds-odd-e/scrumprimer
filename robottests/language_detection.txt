@@ -6,9 +6,12 @@ Resource      resource.txt
 ${MESSAGE}    Hello, world!
 
 *** Test Cases ***
-My Test
+Detect Default Language (English) Of Browser
     [Tags]  developing
-    Open Browser  ${HOME}  ${BROWSER}
-    Page Should Contain  Current Version
+    Open Browser  ${BASE_URL}  ${BROWSER}
+    Page Language Should Be English
     [Teardown]  Close Browser
 
+*** Keywords ***
+Page Language Should Be English
+    Location Should Be  ${BASE_URL}
