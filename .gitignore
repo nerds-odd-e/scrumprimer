@@ -1,5 +1,4 @@
-.project
 log.html
-report.html
 output.xml
-*.png
+report.html
+*screenshot*png
