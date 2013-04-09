@@ -15,5 +15,6 @@ install:
 
 script: 
   - pybot --noncritical "developing" robottests
+  - sudo bundle install
   - cucumber
   
