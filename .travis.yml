@@ -5,7 +5,9 @@ before_install:
 before_script:
   - bundle install
   - cucumber
-language: python
+language: ruby
+rvm:
+  - 1.9.3
 python:
   - "2.7"
 install: 
