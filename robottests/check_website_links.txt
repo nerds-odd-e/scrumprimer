@@ -1,18 +1,30 @@
 *** Settings ***
+Library   Selenium2Library
 
 *** Variables ***
+${BASE_URL}   http://localhost:9292
 
 *** Test Cases ***
 Scrumprimer Links
-    [Template]    Check Text Exists In URL
+    [Template]    Check Text Exists In Path
     [Tags]	developing
-    /translation   "Scrum Primer Translations"
-    /about    "Scrum Primer Creation"
+    http://localhost:9292/	Home
 
 *** Keywords ***
-Check Text Exists In URL
+Check Text Exists In Path
     [Arguments]  ${url}   ${text}
     Open URL    ${url}
     Check Text Exist    ${text}
+    Close Page
 
-    
+Close Page
+    [Arguments]
+    Close Browser
+
+Open URL
+    [Arguments]    ${path}
+    Open Browser    ${path}
+
+Check Text Exist
+    [Arguments]  ${text}
+    Page Should Contain  ${text}
