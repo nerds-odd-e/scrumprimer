@@ -8,6 +8,8 @@ rvm:
 gemfile:
   - Gemfile
 
+script: "bundle install;cucumber"
+
 language: python
 python:
   - "2.7"
