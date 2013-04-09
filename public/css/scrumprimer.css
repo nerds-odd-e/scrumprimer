@@ -1,0 +1,26 @@
+
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container-narrow {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 500px;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+
+.logo {
+	text-align: center;
+}
