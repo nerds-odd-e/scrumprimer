@@ -15,7 +15,7 @@ Then(/^Page should contains "(.*?)"$/) do |image|
 end
 
 Given(/^I am on the anime page$/) do
-  visit '/#anime'
+  visit '/anime'
 end
 
 Then(/^Page should contains a beautiful "(.*?)"$/) do |anime_image|
@@ -23,7 +23,7 @@ Then(/^Page should contains a beautiful "(.*?)"$/) do |anime_image|
 end
 
 Given(/^I am on the overview page$/) do
-  visit '/#overview'
+  visit '/overview'
 end
 
 Then(/^Page should contains a good "(.*?)"$/) do |overview_image|
