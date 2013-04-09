@@ -1,11 +1,7 @@
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-language: ruby
-rvm:
-  - 1.9.3
-gemfile:
-  - Gemfile
+
 language: python
 python:
   - "2.7"
@@ -14,3 +10,9 @@ install:
   - pip install robotframework-selenium2library
 script: 
   - pybot --noncritical "developing" robottests
+
+language: ruby
+rvm:
+  - 1.9.3
+gemfile:
+  - Gemfile
