@@ -5,6 +5,9 @@ before_install:
 language: ruby
 rvm:
   - 1.9.3
+gemfile:
+  - Gemfile
+
 language: python
 python:
   - "2.7"
@@ -13,3 +16,4 @@ install:
   - pip install robotframework-selenium2library
 script: 
   - pybot --noncritical "developing" robottests
+
