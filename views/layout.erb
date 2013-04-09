@@ -32,12 +32,7 @@
 				<div class="span2"></div>
 				<div class="span8">
 					<ul class="nav nav-pills" id="mainTabs">
-						<li class="active" ><a href="#home" data-toggle="tabWithDefault">Home</a></li>
-						<li><a href="/translation" data-toggle="tabWithDefault">Translations</a></li>
-						<li><a href="/overview" data-toggle="tabWithDefault">Overview Picture</a></li>
-						<li><a href="/anime" data-toggle="tabWithDefault">Anime Overview</a></li>
-						<li><a href="/about" data-toggle="tabWithDefault">About</a></li>
-						<li><a href="/contact" data-toggle="tabWithDefault">Contact</a></li>
+						<%= @menu_list %>
 					</ul>
 					<hr>
 				</div>
@@ -51,23 +46,11 @@
     <script src="js/bootstrap-button.js"></script>
     
     <script>
-
-		$(function () {
-			var activeTab = $('[href=' + location.hash + ']');
-			activeTab && activeTab.tab('show');			
-			
-		});
-		
 		function changeLanguage(language) {
 			$('#overview_translated').attr('src','overview/scrum_overview_' + language + '.png');
 			$('#overview_pic_1').attr('href','overview/scrum_overview1_' + language + '.pdf');
 			$('#overview_pic_2').attr('href','overview/scrum_overview2_' + language + '.pdf');
-		}
-		
-		
-		$(document).on('click.tab.data-api', '[data-toggle="tabWithDefault"]', function (e) {
-			$(this).tab('show')
-		})
+		}		
 	</script>
 	
     <!--     Google Analytics -->

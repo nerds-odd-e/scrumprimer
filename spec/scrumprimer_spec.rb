@@ -12,8 +12,18 @@ describe "Scrum Primer Basic Specs" do
   
   it "is able to get to the basic English page at the root" do
     visit '/'
-    page.all(:xpath, "id('home')")[0]["class"].include?("active").should== true
+    page.all(:xpath, "id('home')")[0]["class"].should include("active")
+    page.all(:xpath, "id('mainTabs')/li[@id='navHome']")[0]["class"].should include("active")
     page.should have_content "Current Version"
+  end
+  
+  it "can click to the translation tab and the url changed" do
+    visit '/'
+    click_link "Translations"
+    
+    page.should have_content "PDF versions of the Overview picture"
+    page.all(:xpath, "id('mainTabs')/li[@id='navTranslations']")[0]["class"].should include("active")
+    current_path.should== "/translations"
   end
     
 end

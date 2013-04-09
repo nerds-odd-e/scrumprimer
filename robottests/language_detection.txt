@@ -8,6 +8,6 @@ ${MESSAGE}    Hello, world!
 My Test
     [Tags]  developing
     Open Browser  http://www.scrumprimer.org
-    Page Should Contain  asdfa
+    Page Should Contain  Current Version
     [Teardown]  Close Browser
 

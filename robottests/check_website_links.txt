@@ -1,18 +1,31 @@
 *** Settings ***
+Library   Selenium2Library
 
 *** Variables ***
+${BASE_URL}   http://www.scrumprimer.org
 
 *** Test Cases ***
 Scrumprimer Links
-    [Template]    Check Text Exists In URL
+    [Setup]     Open Browser    ${BASE_URL}
+    [Template]    Check Text Exists In Path
     [Tags]	developing
-    /translation   "Scrum Primer Translations"
-    /about    "Scrum Primer Creation"
+    /     Current Version
+    /#translation    Scrum Primer Translations
+    /#about    Scrum Primer Creation
+    /#contact    Feedback
+    [Teardown]    Close Browser
 
 *** Keywords ***
-Check Text Exists In URL
-    [Arguments]  ${url}   ${text}
-    Open URL    ${url}
+Check Text Exists In Path
+    [Arguments]  ${path}   ${text}
+    Open Page For Path    ${path}
     Check Text Exist    ${text}
 
-    
+Open Page For Path
+    [Arguments]    ${path}
+    ${url}=  Catenate  SEPARATOR=  ${BASE_URL}  ${path}
+    Go To    ${url}
+
+Check Text Exist
+    [Arguments]  ${text}
+    Page Should Contain  ${text}
