@@ -9,10 +9,10 @@ Scrumprimer Links
     [Setup]     Open Browser    ${BASE_URL}
     [Template]    Check Text Exists In Path
     [Tags]	developing
-    /     Current Version
-    /#translation    Scrum Primer Translations
-    /#about    Scrum Primer Creation
-    /#contact    Feedback
+    /     Check Text Exist     Current Version
+    /#translation     Check Text Exist    Scrum Primer Translations
+    /#about    Check Text Exist    Scrum Primer Creation
+    /#contact    Check Text Exist    Feedback
     [Teardown]    Close Browser
 
 Try To Check Image Exist
@@ -22,9 +22,9 @@ Try To Check Image Exist
 
 *** Keywords ***
 Check Text Exists In Path
-    [Arguments]  ${path}   ${text}
+    [Arguments]  ${path}    ${custom_keyword}    ${text}
     Open Page For Path    ${path}
-    Check Text Exist    ${text}
+    Run Keyword    ${custom_keyword}    ${text}
 
 Open Page For Path
     [Arguments]    ${path}
