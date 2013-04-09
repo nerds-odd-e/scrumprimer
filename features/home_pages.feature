@@ -16,15 +16,12 @@ Feature: Viewer visits the Pages
   Then I should see <Content>
 
   Examples:
-   | URL 			 | Content        			   |
-   | "/"   			 | "Scrum Primer" 			   |
+   | URL 			 | Content        			    |
+   | "/"   			 | "Scrum Primer" 			    |
    | "/translations" | "Scrum Primer Translations"  |
    | "/about"        | "Scrum Primer Creation"      |
    | "/contact"      | "Feedback"                   |   
 
-   Scenario: View Scrum Primer Logo
-    Given I am on the home page
-    Then Page should contains "scrumprimerlogo.png"  
 
 
 
