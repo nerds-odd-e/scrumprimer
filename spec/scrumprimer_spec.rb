@@ -20,6 +20,7 @@ describe "Scrum Primer Basic Specs" do
   it "can click to the translation tab and the url changed" do
     visit '/'
     page.status_code.should == 200
+    
     click_link "Translations"
     
     page.should have_content "PDF versions of the Overview picture"
@@ -33,6 +34,30 @@ describe "Scrum Primer Basic Specs" do
     page.status_code.should == 200
     page.should have_content "PDF versions of the overview:"
     current_path.should== "/overview"    
+  end
+  
+  it "can click on the anime tab" do
+    visit '/'
+    click_link "Anime Overview"
+    page.status_code.should == 200
+    page.should have_content "High-resolution versions of the overview:"
+    current_path.should== "/anime"    
+  end
+  
+  it "can click on the about tab" do
+    visit '/'
+    click_link "About"
+    page.status_code.should == 200
+    page.should have_content "Scrum Primer Creation"
+    current_path.should== "/about"    
+  end
+
+  it "can click on the contact tab" do
+    visit '/'
+    click_link "Contact"
+    page.status_code.should == 200
+    page.should have_content "Feedback"
+    current_path.should== "/contact"    
   end
     
 end
