@@ -19,11 +19,20 @@ describe "Scrum Primer Basic Specs" do
   
   it "can click to the translation tab and the url changed" do
     visit '/'
+    page.status_code.should == 200
     click_link "Translations"
     
     page.should have_content "PDF versions of the Overview picture"
     page.all(:xpath, "id('mainTabs')/li[@id='navTranslations']")[0]["class"].should include("active")
     current_path.should== "/translations"
+  end
+  
+  it "can click on the overview tab" do
+    visit '/'
+    click_link "Overview Picture"
+    page.status_code.should == 200
+    page.should have_content "PDF versions of the overview:"
+    current_path.should== "/overview"    
   end
     
 end
