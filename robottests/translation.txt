@@ -2,28 +2,46 @@
 
 Resource  resource.txt
 
+Test Setup  Enter Translation
+Test TearDown  Close Browser
+
 *** Test Cases ***
 
 Default Translation Should be Chinese
-    Open Browser  ${HOME}  ${BROWSER}
-    Click Link  Translations
-    Confirm Translation Should Be Chinese
-    [Teardown]  Close Browser
+    Confirm Translation Should Be  simplified_chinese
+
+Can switch to other language
+    Click Button  Japanese
+    Confirm Translation Should Be  japanese
+    Click Button  French
+    Confirm Translation Should Be  french
 
 *** Keywords ***
-Confirm Translation Should Be Chinese
-    Confirm Chinese Version Is Shown
-    Confirm Links to Chinese PDF
+Enter Translation
+    Open Browser  ${HOME}  ${BROWSER}
+    Click Link  Translations
 
-Confirm Chinese Version Is Shown
+Confirm Translation Should Be  [Arguments]  ${language}
+    Confirm Translation Is Shown  ${language}
+    Confirm Links to PDF  ${language}
+
+Confirm Translation Is Shown  [Arguments]  ${language}
     ${src_overview_pic}=  Get Element Attribute  overview_translated@src
-    Should Be Equal  ${src_overview_pic}  http://scrumprimer.org/overview/scrum_overview_simplified_chinese.png
+    ${overview_picture}=  Catenate  SEPARATOR=  http://scrumprimer.org/overview/scrum_overview_  ${language}  .png
+    Should Be Equal  ${src_overview_pic}  ${overview_picture}
 
-Confirm Links to Chinese PDF
-    Confirm Element Link  overview_pic_1  http://scrumprimer.org/overview/scrum_overview1_simplified_chinese.pdf
-    Confirm Element Link  overview_pic_2  http://scrumprimer.org/overview/scrum_overview2_simplified_chinese.pdf
+Confirm Links to PDF  [Arguments]  ${language}
+    Confirm PDF version  ${language}  1
+    Confirm PDF version  ${language}  2
  
+Confirm PDF version  [Arguments]  ${language}  ${version}
+    ${overview}=  Catenate  SEPARATOR=  http://scrumprimer.org/overview/scrum_overview  ${version}  _  ${language}  .pdf
+    ${overview_pic}=  Catenate  SEPARATOR=  overview_pic_  ${version}
+    Confirm Element Link  ${overview_pic}  ${overview}
+
 Confirm Element Link  [Arguments]  ${id}  ${link_pdf}
     ${href}=  Catenate  SEPARATOR=  ${id}  @href
     ${href_overview}=  Get Element Attribute  ${href}
     Should Be Equal  ${href_overview}  ${link_pdf}
+
+
