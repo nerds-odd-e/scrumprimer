@@ -1,24 +1,13 @@
 *** Settings ***
-Library       OperatingSystem
 Library       Selenium2Library  timeout=20sec
 
 *** Variables ***
 ${MESSAGE}    Hello, world!
-@{l}
-${a}=  2
 
 *** Test Cases ***
 My Test
-    Start Selenium Server
-    Open Browser  http://www.odd-e.com
-    Page Should Contain  asdfasdfa
-    [Teardown]  Stop Selenium Server
-
-Another Test
-    Should Be Equal    ${MESSAGE}    Hello, world!
-
-*** Keywords ***
-My Keyword
-	${a}=  Set Variable  3
-	Set Test Variable  ${a}
+    [Tags]  developing
+    Open Browser  http://www.scrumprimer.org
+    Page Should Contain  asdfa
+    [Teardown]  Close Browser
 

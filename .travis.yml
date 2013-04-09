@@ -7,4 +7,5 @@ python:
 install: 
   - pip install robotframework
   - pip install robotframework-selenium2library
-script:  pybot robottests
+script: 
+  - pybot --noncritical "developing" robottests
