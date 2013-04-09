@@ -5,6 +5,7 @@
 *** Test Cases ***
 Scrumprimer Links
     [Template]    Check Text Exists In URL
+    [Tags]	developing
     /translation   "Scrum Primer Translations"
     /about    "Scrum Primer Creation"
 
