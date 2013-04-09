@@ -9,15 +9,12 @@ Scrumprimer Links
     [Setup]     Open Browser    ${BASE_URL}
     [Template]    Check Text Exists In Path
     [Tags]	developing
-    /     Check Text Exist     Current Version
+    /     Check Image Exist     scrumprimerlogo.png
     /#translation     Check Text Exist    Scrum Primer Translations
+    /#anime    Check Image Exist    overview/anime_scrum_overview_small.png
     /#about    Check Text Exist    Scrum Primer Creation
+    /#overview    Check Image Exist    overview/overview.png
     /#contact    Check Text Exist    Feedback
-    [Teardown]    Close Browser
-
-Try To Check Image Exist
-    [Setup]    Open Browser    ${BASE_URL}
-    Page Should Contain Image    scrumprimerlogo.png
     [Teardown]    Close Browser
 
 *** Keywords ***
@@ -32,5 +29,9 @@ Open Page For Path
     Go To    ${url}
 
 Check Text Exist
-    [Arguments]  ${text}
+    [Arguments]    ${text}
     Page Should Contain  ${text}
+
+Check Image Exist
+    [Arguments]    ${image_file_name}
+    Page Should Contain Image    ${image_file_name}
