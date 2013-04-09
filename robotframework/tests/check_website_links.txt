@@ -1,0 +1,17 @@
+*** Settings ***
+
+*** Variables ***
+
+*** Test Cases ***
+Scrumprimer Links
+    [Template]    Check Text Exists In URL
+    /translation   "Scrum Primer Translations"
+    /about    "Scrum Primer Creation"
+
+*** Keywords ***
+Check Text Exists In URL
+    [Arguments]  ${url}   ${text}
+    Open URL    ${url}
+    Check Text Exist    ${text}
+
+    
