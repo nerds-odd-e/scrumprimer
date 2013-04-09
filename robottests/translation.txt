@@ -1,0 +1,29 @@
+*** Settings ***
+
+Resource  resource.txt
+
+*** Test Cases ***
+
+Default Translation Should be Chinese
+    Open Browser  ${HOME}  ${BROWSER}
+    Click Link  Translations
+    Confirm Translation Should Be Chinese
+    [Teardown]  Close Browser
+
+*** Keywords ***
+Confirm Translation Should Be Chinese
+    Confirm Chinese Version Is Shown
+    Confirm Links to Chinese PDF
+
+Confirm Chinese Version Is Shown
+    ${src_overview_pic}=  Get Element Attribute  overview_translated@src
+    Should Be Equal  ${src_overview_pic}  http://scrumprimer.org/overview/scrum_overview_simplified_chinese.png
+
+Confirm Links to Chinese PDF
+    Confirm Element Link  overview_pic_1  http://scrumprimer.org/overview/scrum_overview1_simplified_chinese.pdf
+    Confirm Element Link  overview_pic_2  http://scrumprimer.org/overview/scrum_overview2_simplified_chinese.pdf
+ 
+Confirm Element Link  [Arguments]  ${id}  ${link_pdf}
+    ${href}=  Catenate  SEPARATOR=  ${id}  @href
+    ${href_overview}=  Get Element Attribute  ${href}
+    Should Be Equal  ${href_overview}  ${link_pdf}
