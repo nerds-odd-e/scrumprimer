@@ -1,17 +1,22 @@
 *** Settings ***
 Resource      resource.txt
 
-
-*** Variables ***
-${MESSAGE}    Hello, world!
-
 *** Test Cases ***
 Detect Default Language (English) Of Browser
-    [Tags]  developing
     Open Browser  ${BASE_URL}  ${BROWSER}
     Page Language Should Be English
+    [Teardown]  Close Browser
+
+Detect (Simplified) Chinese Language Of Browser
+    [Tags]  developing
+    Open Browser  ${BASE_URL}  ${BROWSER}  ff_profile_dir=robottests/FirefoxProfiles/zh-cn
+    Page Language Should Be Simplified Chinese
     [Teardown]  Close Browser
 
 *** Keywords ***
 Page Language Should Be English
     Location Should Be  ${BASE_URL}
+
+Page Language Should Be Simplified Chinese
+    Location Should Be  ${BASE_URL}cn/
+    
