@@ -12,6 +12,5 @@ install:
   - sudo pip install robotframework-selenium2library
 
 script: 
-  - rackup -D
   - pybot --noncritical "developing" robottests
   
