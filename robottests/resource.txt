@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-${HOME}        http://scrumprimer.org
+${HOME}        http://localhost:9292
 ${BROWSER}       firefox
 
 
