@@ -5,3 +5,5 @@ report.html
 .bundle
 bin
 vendor
+*.swp
+link-checker-crawled-pages.pstore
