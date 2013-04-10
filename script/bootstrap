@@ -68,5 +68,11 @@ if test $(which pyenv); then
   pyenv rehash
 fi
 
+# Install Node packages
+echo "  + Installing Node packages."
+npm install mocha &> /dev/null
+npm install should &> /dev/null
+npm install coffee-script &> /dev/null
+
 echo ""
 echo "  We're ready to rock!"
