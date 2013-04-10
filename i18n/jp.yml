@@ -1,0 +1,17 @@
+home:
+  navigation: 
+    home: Home
+    translations: Translations
+    overview: Overview Picture
+    anime: Anime Overview
+    about: About
+    contact: Contact
+
+  body: 
+    download_small_file: Download here - Small file
+    download_print_quality_file: Download here - Print quality
+    current_version: Current Version  
+    translations: Translations
+    
+translations:
+  scrum_primer_translations: Scrum Primer Translations    
