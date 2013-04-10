@@ -7,4 +7,11 @@ home:
     about: 关于...
     contact: 联系人
 
-  current_version: 当前版本
+  body: 
+    download_small_file: 下载浏览质量文件
+    download_print_quality_file: 下载打印质量文件
+    current_version: 当前版本 
+    translations: 翻译版
+
+translations:
+  scrum_primer_translations: Scrum 简章

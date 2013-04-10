@@ -12,21 +12,21 @@
 		<div class="row-fluid">
 			<div class="span3"></div>
 			<div class="span3">
-				<h4><%= t.home.current_version %></h4>
+				<h4><%= t.home.body.current_version %></h4>
 				<p>
-					<a href="scrumprimer20_small.pdf">Download here - Small file</a><br/>
-					<a href="scrumprimer20.pdf">Download here - Print quality</a>
+					<a href="scrumprimer20_small.pdf"><%= t.home.body.download_small_file %></a><br/>
+					<a href="scrumprimer20.pdf"><%= t.home.body.download_print_quality_file %></a>
 				</p>
 			</div>			
 			
 			<div class="span3">
-				<h4>Translations</h4>
-				<a href="primers/scrumprimer20_french.pdf">Scrum Primer in French</a><br/>
+				<h4><%= t.home.body.translations %></h4>
+				<a href="primers/scrumprimer20_french.pdf"><%= t.home.body.scrum_primer_in_french %></a><br/>
 				
-				<p>Currently in progress:</p>
+				<p><%= t.home.body.currently_in_progress %>:</p>
 				<ul>
-					<li>Chinese</li>
-					<li>Japanese</li>
+					<li><%= t.chinese %></li>
+					<li><%= t.japanese %></li>
 				</ul>
 			</div>
 		</div>
