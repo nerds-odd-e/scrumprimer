@@ -4,7 +4,7 @@ Resource      resource.txt
 *** Test Cases ***
 Scrumprimer Links
     [Setup]     Open Browser    ${BASE_URL}
-    [Template]    Check Text Exists In Path
+    [Template]    Check Resource Exists In Path
     /     Check Image Exist     scrumprimerlogo.png
     /translations     Check Text Exist    Scrum Primer Translations
     /overview    Check Image Exist    overview/overview.png
@@ -14,7 +14,7 @@ Scrumprimer Links
     [Teardown]    Close Browser
 
 *** Keywords ***
-Check Text Exists In Path
+Check Resource Exists In Path
     [Arguments]  ${path}    ${custom_keyword}    ${text}
     Open Page For Path    ${path}
     Run Keyword    ${custom_keyword}    ${text}
