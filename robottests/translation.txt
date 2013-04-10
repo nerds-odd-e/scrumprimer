@@ -30,17 +30,9 @@ Confirm Translation Is Shown  [Arguments]  ${language}
     Page Should Contain Image    ${overview_picture}    
 
 Confirm Links to PDF  [Arguments]  ${language}
-    Confirm PDF version  ${language}  1
-    Confirm PDF version  ${language}  2
- 
-Confirm PDF version  [Arguments]  ${language}  ${version}
-    ${overview}=  Catenate  SEPARATOR=  ${BASE_URL}  overview/scrum_overview  ${version}  _  ${language}  .pdf
-    ${overview_pic}=  Catenate  SEPARATOR=  overview_pic_  ${version}
-    Confirm Element Link  ${overview_pic}  ${overview}
+    Confirm Link With Language And Version  ${language}  1
+    Confirm Link With Language And Version  ${language}  2
 
-Confirm Element Link  [Arguments]  ${id}  ${link_pdf}
-    ${href}=  Catenate  SEPARATOR=  ${id}  @href
-    ${href_overview}=  Get Element Attribute  ${href}
-    Should Be Equal  ${href_overview}  ${link_pdf}
-
-
+Confirm Link With Language And Version  [Arguments]  ${language}  ${version}
+    ${overview}=  Catenate  SEPARATOR=    overview/scrum_overview  ${version}  _  ${language}  .pdf
+    Page Should Contain Link    ${overview}    
