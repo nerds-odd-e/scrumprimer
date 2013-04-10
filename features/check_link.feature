@@ -3,23 +3,16 @@ Feature: Viewer visits the Pages
  As a viewer
  I want to see the pages of scrum primer
 
- Scenario Outline: Checking images
+ Scenario Outline: Check resource exists
   Given I am on the <URL>
-  Then I should see the image <Image>
+  Then I should <Command> <Resource>
 
   Examples:
-   | URL             | Image                                      |
-   | "/"             | "scrumprimerlogo.png"                      |
-   | "/overview"     | "overview/overview.png"                    |
-   | "/anime"        | "overview/anime_scrum_overview_small.png"  |    
-
- Scenario Outline: Checking content
-  Given I am on the <URL>
-  Then I should see <Content>
-
-  Examples:
-   | URL             | Content                      |
-   | "/"             | "Scrum Primer"               |
-   | "/translations" | "Scrum Primer Translations"  |
-   | "/about"        | "Scrum Primer Creation"      |
-   | "/contact"      | "Feedback"                   |    
+   | URL             | Command   | Resource                                   |
+   | "/"             | Has Image | "scrumprimerlogo.png"                      |
+   | "/overview"     | Has Image | "overview/overview.png"                    |
+   | "/anime"        | Has Image | "overview/anime_scrum_overview_small.png"  |    
+   | "/"             | Has Text  | "Scrum Primer"                             |
+   | "/translations" | Has Text  | "Scrum Primer Translations"                |
+   | "/about"        | Has Text  | "Scrum Primer Creation"                    |
+   | "/contact"      | Has Text  | "Feedback"                                 |    
