@@ -6,5 +6,5 @@ Feature: Checking translation link
   Scenario: Access to chinese scrum overview
     Given I am on the home page
     When I click on '/translation' link
-    Then It should show me 'overview/scrum_overview_simplified_chinese.png'
+    Then It should show me "/overview/scrum_overview_simplified_chinese.png"
 

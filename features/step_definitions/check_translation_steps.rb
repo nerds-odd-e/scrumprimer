@@ -1,11 +1,12 @@
 Given(/^I am on the home page$/) do
-  pending # express the regexp above with the code you wish you had
+  visit '/'
 end
 
 When(/^I click on '\/translation' link$/) do
-  pending # express the regexp above with the code you wish you had
+  click_link 'Translations'
+  page.status_code.should == 200
 end
 
-Then(/^It should show me 'overview\/scrum_overview_simplified_chinese\.png'$/) do
-  pending # express the regexp above with the code you wish you had
+Then(/^It should show me "(.*?)"$/) do |chinese_simplify|
+   page.should have_image chinese_simplify 
 end
