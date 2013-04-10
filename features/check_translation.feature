@@ -7,4 +7,6 @@ Feature: Checking translation link
     Given I am on the home page
     When I click on '/translation' link
     Then It should show me "/overview/scrum_overview_simplified_chinese.png"
+      And I should be able to download "/overview/scrum_overview1_simplified_chinese.pdf" from "Scrum Overview Version 1"
+      And I also should be able to download "/overview/scrum_overview2_simplified_chinese.pdf" from "Scrum Overview Version 2"
 
