@@ -33,6 +33,7 @@ fi
 if test ! $(which node); then
   echo "  x You need to install Node.js"
   echo "    brew install node"
+  exit
 else
   echo "  + Node.js found."
 fi
@@ -41,6 +42,7 @@ fi
 if test ! $(which npm); then
   echo "  x You need to install NPM"
   echo "    curl http://npmjs.org/install.sh | sh"
+  exit
 else
   echo "  + NPM found."
 fi
