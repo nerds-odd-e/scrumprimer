@@ -8,11 +8,11 @@ Feature: Viewer visits the Pages
   Then I should <Command> <Resource>
 
   Examples:
-   | URL             | Command   | Resource                                   |
-   | "/"             | Has Text  | "Scrum Primer"                             |   
+   | URL             | Command   | Resource                                    |
+   | "/"             | Has Text  | "Scrum Primer"                              |   
    | "/"             | Has Image | "/scrumprimerlogo.png"                      |
-   | "/overview"     | Has Image | "overview/overview.png"                    |
-   | "/anime"        | Has Image | "overview/anime_scrum_overview_small.png"  |    
-   | "/translations" | Has Text  | "Scrum Primer Translations"                |
-   | "/about"        | Has Text  | "Scrum Primer Creation"                    |
-   | "/contact"      | Has Text  | "Feedback"                                 |    
+   | "/overview"     | Has Image | "/overview/overview.png"                    |
+   | "/anime"        | Has Image | "/overview/anime_scrum_overview_small.png"  |    
+   | "/translations" | Has Text  | "Scrum Primer Translations"                 |
+   | "/about"        | Has Text  | "Scrum Primer Creation"                     |
+   | "/contact"      | Has Text  | "Feedback"                                  |    
