@@ -2,13 +2,17 @@ require 'rake'
 require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
+require 'rspec/core/rake_task'
 
 task :default => [:test_everything]
 
 task :test_everything do   
+	Rake::Task['spec'].invoke
 	Rake::Task['cucumber_tests'].invoke 
    	Rake::Task['robot_tests'].invoke
 end
+
+RSpec::Core::RakeTask.new(:spec)
 
 task :robot_tests do
 	sh "pybot -d robottests/output --noncritical 'developing' robottests"
