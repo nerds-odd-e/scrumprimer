@@ -52,7 +52,7 @@ echo "  + Bootstrapping your Rubies."
 bundle install --quiet
 
 # If we have rbenv, let's run `rbenv rehash`
-if test ! $(which rbenv); then
+if test $(which rbenv); then
   echo "  + Rehashing Ruby environment as you are using rbenv."
   rbenv rehash
 fi
@@ -63,7 +63,7 @@ pip -q install robotframework
 pip -q install robotframework-selenium2library
 
 # If we have pyenv, let's run `pyenv rehash`
-if test ! $(which pyenv); then
+if test $(which pyenv); then
   echo "  + Rehashing Python environment as you are using pyenv."
   pyenv rehash
 fi
