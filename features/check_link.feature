@@ -9,10 +9,10 @@ Feature: Viewer visits the Pages
 
   Examples:
    | URL             | Command   | Resource                                   |
-   | "/"             | Has Image | "scrumprimerlogo.png"                      |
+   | "/"             | Has Text  | "Scrum Primer"                             |   
+   | "/"             | Has Image | "/scrumprimerlogo.png"                      |
    | "/overview"     | Has Image | "overview/overview.png"                    |
    | "/anime"        | Has Image | "overview/anime_scrum_overview_small.png"  |    
-   | "/"             | Has Text  | "Scrum Primer"                             |
    | "/translations" | Has Text  | "Scrum Primer Translations"                |
    | "/about"        | Has Text  | "Scrum Primer Creation"                    |
    | "/contact"      | Has Text  | "Feedback"                                 |    

@@ -1,11 +1,11 @@
-Given(/^I am on the "(.*?)"$/) do |arg1|
-  visit arg1
+Given(/^I am on the "(.*?)"$/) do |target_url|
+  visit target_url
 end
 
-Then(/^I should Has Image "(.*?)"$/) do |arg1|  
-  page.should have_xpath("//img[@src=\"#{arg1}\"]")
+Then(/^I should Has Image "(.*?)"$/) do |target_image|  
+  page.should have_xpath("//img[@src=\"#{target_image}\"]")
 end
 
-Then(/^I should Has Text "(.*?)"$/) do |arg1|
-  page.should have_content arg1
+Then(/^I should Has Text "(.*?)"$/) do |target_text|
+  page.should have_content target_text
 end
