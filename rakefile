@@ -11,7 +11,7 @@ task :test_everything do
 end
 
 task :robot_tests do
-	sh "pybot --noncritical 'developing' robottests"
+	sh "pybot -d robottests/output --noncritical 'developing' robottests"
 end
 
 desc "run the server"
