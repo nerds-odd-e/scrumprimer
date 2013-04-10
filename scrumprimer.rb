@@ -7,19 +7,19 @@ class ScrumPrimerApp < Sinatra::Application
   register Sinatra::R18n
   set :root, File.dirname(__FILE__)
 
-  def initialize
-    super
+  def initialize_menu    
     @menu_url_and_names = {
-      :home => "Home",
-      :translations => "Translations",
-      :overview => "Overview Picture",
-      :anime => "Anime Overview",
-      :about => "About",
-      :contact => "Contact"
+      :home => t.home.navigation.home,
+      :translations => t.home.navigation.translations,
+      :overview => t.home.navigation.overview,
+      :anime => t.home.navigation.anime,
+      :about => t.home.navigation.about,
+      :contact => t.home.navigation.contact
     }
   end
   
   def generate_menu_list (active_tab, current_locale = nil)
+    initialize_menu
     menu_list = ""
     locale = current_locale ? "#{current_locale}/" : ''
     @menu_url_and_names.each { |url, description|

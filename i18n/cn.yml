@@ -1,2 +1,10 @@
 home:
+  navigation: 
+    home: 首页
+    translations: 翻译
+    overview: 总览图
+    anime: 卡通版总览图
+    about: 关于...
+    contact: 联系人
+
   current_version: 当前版本

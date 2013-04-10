@@ -28,7 +28,9 @@ describe "International Scrum Primer" do
 
   it "has tabs that will use locale when accessed initially with that specific locale" do
   	visit '/cn/home'
-  	click_link 'Translations'
+  	click_link '翻译'
   	current_path.should== '/cn/translations'  
   end	
+
+
 end

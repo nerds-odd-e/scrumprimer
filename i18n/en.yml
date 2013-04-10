@@ -1,2 +1,10 @@
 home:
+  navigation: 
+    home: Home
+    translations: Translations
+    overview: Overview Picture
+    anime: Anime Overview
+    about: About
+    contact: Contact
+
   current_version: Current Version
