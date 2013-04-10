@@ -26,7 +26,7 @@ Confirm Translation Should Be  [Arguments]  ${language}
     Confirm Links to PDF  ${language}
 
 Confirm Translation Is Shown  [Arguments]  ${language}
-    ${overview_picture}=  Catenate  SEPARATOR=  overview/scrum_overview_  ${language}  .png
+    ${overview_picture}=  Catenate  SEPARATOR=  /overview/scrum_overview_  ${language}  .png
     Page Should Contain Image    ${overview_picture}    
 
 Confirm Links to PDF  [Arguments]  ${language}
@@ -34,5 +34,5 @@ Confirm Links to PDF  [Arguments]  ${language}
     Confirm Link With Language And Version  ${language}  2
 
 Confirm Link With Language And Version  [Arguments]  ${language}  ${version}
-    ${overview}=  Catenate  SEPARATOR=    overview/scrum_overview  ${version}  _  ${language}  .pdf
+    ${overview}=  Catenate  SEPARATOR=    /overview/scrum_overview  ${version}  _  ${language}  .pdf
     Page Should Contain Link    ${overview}    
