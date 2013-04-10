@@ -5,7 +5,7 @@ Resource      resource.txt
 Scrumprimer Links
     [Setup]     Open Browser    ${BASE_URL}
     [Template]    Check Resource Exists In Path
-    /     Check Image Exist     scrumprimerlogo.png
+    /     Check Image Exist     /scrumprimerlogo.png
     /translations     Check Text Exist    Scrum Primer Translations
     /overview    Check Image Exist    overview/overview.png
     #/anime    Check Image Exist    overview/anime_scrum_overview_small.png
