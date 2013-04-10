@@ -16,6 +16,6 @@ install:
 
 script:
   - bundle install 
-  - cucumber
+  - rake
   - rackup -D
   - pybot --noncritical "developing" robottests
