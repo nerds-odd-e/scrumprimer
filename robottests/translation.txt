@@ -18,7 +18,7 @@ Can switch to other language
 
 *** Keywords ***
 Enter Translation
-    Open Browser  ${HOME}  ${BROWSER}
+    Open Browser  ${BASE_URL}  ${BROWSER}
     Click Link  Translations
 
 Confirm Translation Should Be  [Arguments]  ${language}
@@ -27,7 +27,7 @@ Confirm Translation Should Be  [Arguments]  ${language}
 
 Confirm Translation Is Shown  [Arguments]  ${language}
     ${src_overview_pic}=  Get Element Attribute  overview_translated@src
-    ${overview_picture}=  Catenate  SEPARATOR=  http://scrumprimer.org/overview/scrum_overview_  ${language}  .png
+    ${overview_picture}=  Catenate  SEPARATOR=  ${BASE_URL}  overview/scrum_overview_  ${language}  .png
     Should Be Equal  ${src_overview_pic}  ${overview_picture}
 
 Confirm Links to PDF  [Arguments]  ${language}
@@ -35,7 +35,7 @@ Confirm Links to PDF  [Arguments]  ${language}
     Confirm PDF version  ${language}  2
  
 Confirm PDF version  [Arguments]  ${language}  ${version}
-    ${overview}=  Catenate  SEPARATOR=  http://scrumprimer.org/overview/scrum_overview  ${version}  _  ${language}  .pdf
+    ${overview}=  Catenate  SEPARATOR=  ${BASE_URL}  overview/scrum_overview  ${version}  _  ${language}  .pdf
     ${overview_pic}=  Catenate  SEPARATOR=  overview_pic_  ${version}
     Confirm Element Link  ${overview_pic}  ${overview}
 

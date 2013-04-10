@@ -1,13 +1,22 @@
 *** Settings ***
-Library       Selenium2Library  timeout=20sec
-
-*** Variables ***
-${MESSAGE}    Hello, world!
+Resource      resource.txt
 
 *** Test Cases ***
-My Test
-    [Tags]  developing
-    Open Browser  http://www.scrumprimer.org
-    Page Should Contain  Current Version
+Detect Default Language (English) Of Browser
+    Open Browser  ${BASE_URL}  ${BROWSER}
+    Page Language Should Be English
     [Teardown]  Close Browser
 
+Detect (Simplified) Chinese Language Of Browser
+    [Tags]  developing
+    Open Browser  ${BASE_URL}  ${BROWSER}  ff_profile_dir=robottests/FirefoxProfiles/zh-cn
+    Page Language Should Be Simplified Chinese
+    [Teardown]  Close Browser
+
+*** Keywords ***
+Page Language Should Be English
+    Location Should Be  ${BASE_URL}
+
+Page Language Should Be Simplified Chinese
+    Location Should Be  ${BASE_URL}cn/
+    

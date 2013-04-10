@@ -14,8 +14,8 @@ install:
   - sudo pip install robotframework-selenium2library
   - gem install bundler
 
-script: 
-  - bundle install
+script:
+  - bundle install 
   - cucumber
   - rackup -D
   - pybot --noncritical "developing" robottests

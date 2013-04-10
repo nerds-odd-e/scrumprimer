@@ -5,8 +5,8 @@ require 'cucumber/rake/task'
 
 desc "run the server"
 task :run do |t|
-  require "src/ninjas4hire_app.rb"
-  Ninjas4HireApp.run!
+  require "./scrumprimer.rb"
+  ScrumPrimerApp.run!
 end
 
 desc "run cucumber features"
