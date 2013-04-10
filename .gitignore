@@ -7,3 +7,4 @@ bin
 vendor
 *.swp
 link-checker-crawled-pages.pstore
+node_modules
