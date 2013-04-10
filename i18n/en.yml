@@ -24,9 +24,24 @@ home:
     scrum_primer_in_french: Scrum Primer in French
     currently_in_progress: Currently In Progress
 
-translations:
+overview:
   scrum_primer_translations: Scrum Primer Translations  
+  scrum_overview_picture: Scrum Overview Picture
+  overview_picture_pdf_versions: PDF versions of the Overview picture
+  scrum_overview_v1: Scrum Overview Version 1
+  scrum_overview_v2: Scrum Overview Version 2
+  feel_free_to_use: Feel free to use it in your own material.
+  work_is_licensed_under: This work is licensed under a
 
 
 
 
+
+
+
+anime:
+  scrum_overview_anime_version: Scrum Overview - Anime version
+  scrum_overview_blue: Scrum Overview - Blue
+  scrum_overview_pink: Scrum Overview - Pink
+  scrum_overview_green: Scrum Overview - Green
+  high_resolution_versions: High-resolution versions of the overview

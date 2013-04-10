@@ -17,7 +17,7 @@ if test ! $(which bundle); then
   echo "    gem install bundler"
   exit
 else
-  echo "  + Bundler found."  
+  echo "  + Bundler found."
 fi
 
 # Check for Pip / Python
@@ -29,12 +29,30 @@ else
   echo "  + Python found."
 fi
 
+# Check for Node.js
+if test ! $(which node); then
+  echo "  x You need to install Node.js"
+  echo "    brew install node"
+  exit
+else
+  echo "  + Node.js found."
+fi
+
+# Check for NPM
+if test ! $(which npm); then
+  echo "  x You need to install NPM"
+  echo "    curl http://npmjs.org/install.sh | sh"
+  exit
+else
+  echo "  + NPM found."
+fi
+
 # Install gems
 echo "  + Bootstrapping your Rubies."
-bundle install
+bundle install --quiet
 
 # If we have rbenv, let's run `rbenv rehash`
-if test ! $(which rbenv); then
+if test $(which rbenv); then
   echo "  + Rehashing Ruby environment as you are using rbenv."
   rbenv rehash
 fi
@@ -45,7 +63,7 @@ pip -q install robotframework
 pip -q install robotframework-selenium2library
 
 # If we have pyenv, let's run `pyenv rehash`
-if test ! $(which pyenv); then
+if test $(which pyenv); then
   echo "  + Rehashing Python environment as you are using pyenv."
   pyenv rehash
 fi
