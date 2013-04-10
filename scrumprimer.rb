@@ -1,11 +1,15 @@
 
 require 'sinatra'
+require 'sinatra/r18n'
 
 class ScrumPrimerApp < Sinatra::Application
 
-  get '/:tab?' do
+  register Sinatra::R18n
+  set :root, File.dirname(__FILE__)
 
-    menu = {
+  def initialize
+    super
+    @menu_url_and_names = {
       :home => "Home",
       :translations => "Translations",
       :overview => "Overview Picture",
@@ -13,15 +17,28 @@ class ScrumPrimerApp < Sinatra::Application
       :about => "About",
       :contact => "Contact"
     }
-    tab = params[:tab] || "home"
-    
-    @menu_list = ""
-    menu.each { |url, description|
-      active = (url.to_s == "#{tab}") ? ' class="active "' : ""
-      @menu_list += "<li #{active} id=nav#{url.capitalize}> <a href=\"/#{url}\">#{description}</a></li>\n"
+  end
+  
+  def generate_menu_list (active_tab)
+    menu_list = ""
+    @menu_url_and_names.each { |url, description|
+      active = (url.to_s == "#{active_tab}") ? ' class="active "' : ""
+      menu_list += "<li #{active} id=nav#{url.capitalize}> <a href=\"/#{url}\">#{description}</a></li>\n"
     }
+    menu_list
+  end
+  
+  get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|
+    tab = tab || 'home'
+    @menu_list = generate_menu_list(tab)
     erb :"#{tab}"
-  end  
+  end
+
+  get '/:locale/:tab?' do
+    tab = params[:tab] || 'home'
+    @menu_list = generate_menu_list(tab)
+    erb :"#{tab}"
+  end
 end
 
 
