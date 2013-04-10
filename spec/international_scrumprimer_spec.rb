@@ -16,7 +16,7 @@ describe "International Scrum Primer" do
   end
   
   it "Can access the main page in Chinese" do
-    visit '/cn/'
+    visit '/zh-cn/'
     page.should have_content "当前版本"
   end
 
@@ -27,9 +27,9 @@ describe "International Scrum Primer" do
   end	
 
   it "has tabs that will use locale when accessed initially with that specific locale" do
-  	visit '/cn'
+  	visit '/zh-cn/'
   	click_link '翻译'
-  	current_path.should== '/cn/translations'  
+  	current_path.should== '/zh-cn/translations'  
   end	
 
   it "has English translation on the homepage" do
@@ -38,12 +38,12 @@ describe "International Scrum Primer" do
   end
   
   it "has Chinese translation on the homepage" do
-    visit '/cn'
+    visit '/zh-cn/'
     page.should have_content "下载浏览质量文件"
   end 
 
   it "has Chinese translation on the translations page" do
-    visit '/cn/translations'
+    visit '/zh-cn/translations'
     page.should have_content "Scrum 简章"
   end  
 

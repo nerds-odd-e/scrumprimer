@@ -29,7 +29,7 @@ class ScrumPrimerApp < Sinatra::Application
     menu_list
   end
   
-  get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|
+  get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|    
     tab = tab || 'home'
     @menu_list = generate_menu_list(tab)
     erb :"#{tab}"
