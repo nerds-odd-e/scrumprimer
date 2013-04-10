@@ -17,7 +17,7 @@ if test ! $(which bundle); then
   echo "    gem install bundler"
   exit
 else
-  echo "  + Bundler found."  
+  echo "  + Bundler found."
 fi
 
 # Check for Pip / Python
@@ -29,9 +29,25 @@ else
   echo "  + Python found."
 fi
 
+# Check for Node.js
+if test ! $(which node); then
+  echo "  x You need to install Node.js"
+  echo "    brew install node"
+else
+  echo "  + Node.js found."
+fi
+
+# Check for NPM
+if test ! $(which npm); then
+  echo "  x You need to install NPM"
+  echo "    curl http://npmjs.org/install.sh | sh"
+else
+  echo "  + NPM found."
+fi
+
 # Install gems
 echo "  + Bootstrapping your Rubies."
-bundle install --binstubs --path vendor/gems --quiet
+bundle install --quiet
 
 # If we have rbenv, let's run `rbenv rehash`
 if test ! $(which rbenv); then
