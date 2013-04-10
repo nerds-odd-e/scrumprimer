@@ -3,7 +3,7 @@ Feature: Viewer visits the Pages
  As a viewer
  I want to see the pages of scrum primer
 
- Scenario Outline: Check resource exists
+ Scenario Outline: Check resource exists in url
   Given I am on the <URL>
   Then I should <Command> <Resource>
 
