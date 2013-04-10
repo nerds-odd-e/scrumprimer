@@ -26,9 +26,8 @@ Confirm Translation Should Be  [Arguments]  ${language}
     Confirm Links to PDF  ${language}
 
 Confirm Translation Is Shown  [Arguments]  ${language}
-    ${src_overview_pic}=  Get Element Attribute  overview_translated@src
-    ${overview_picture}=  Catenate  SEPARATOR=  ${BASE_URL}  overview/scrum_overview_  ${language}  .png
-    Should Be Equal  ${src_overview_pic}  ${overview_picture}
+    ${overview_picture}=  Catenate  SEPARATOR=  overview/scrum_overview_  ${language}  .png
+    Page Should Contain Image    ${overview_picture}    
 
 Confirm Links to PDF  [Arguments]  ${language}
     Confirm PDF version  ${language}  1
