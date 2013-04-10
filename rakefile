@@ -3,6 +3,8 @@ require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
 
+task :default => [:features]
+
 desc "run the server"
 task :run do |t|
   require "./scrumprimer.rb"
