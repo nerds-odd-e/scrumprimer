@@ -3,15 +3,24 @@ require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
 
-task :default => [:features]
+task :default => [:test_everything]
+
+task :test_everything do   
+	Rake::Task['cucumber_tests'].invoke 
+   	Rake::Task['robot_tests'].invoke
+end
+
+task :robot_tests do
+	sh "pybot --noncritical 'developing' robottests"
+end
 
 desc "run the server"
 task :run do |t|
-  require "./scrumprimer.rb"
-  ScrumPrimerApp.run!
+	require "./scrumprimer.rb"
+  	ScrumPrimerApp.run!
 end
 
 desc "run cucumber features"
-Cucumber::Rake::Task.new(:features) do |t|
-  t.cucumber_opts = "features --format pretty"
+Cucumber::Rake::Task.new(:cucumber_tests) do |t|
+  	t.cucumber_opts = "features --format pretty"
 end
