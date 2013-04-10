@@ -1,3 +1,12 @@
+chinese: 简体中文
+japanese: 日本語
+vietnamese: Việt
+korean: 한국의
+french: Français
+german: Deutsch
+spanish: Español
+bulgarian: български
+
 home:
   navigation: 
     home: Home
@@ -7,4 +16,17 @@ home:
     about: About
     contact: Contact
 
-  current_version: Current Version
+  body: 
+    download_small_file: Download here - Small file
+    download_print_quality_file: Download here - Print quality
+    current_version: Current Version  
+    translations: Translations
+    scrum_primer_in_french: Scrum Primer in French
+    currently_in_progress: Currently In Progress
+
+translations:
+  scrum_primer_translations: Scrum Primer Translations  
+
+
+
+

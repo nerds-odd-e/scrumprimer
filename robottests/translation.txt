@@ -11,9 +11,9 @@ Default Translation Should be Chinese
     Confirm Translation Should Be  simplified_chinese
 
 Can switch to other language
-    Click Button  Japanese
+    Click Button  日本語
     Confirm Translation Should Be  japanese
-    Click Button  French
+    Click Button  Français
     Confirm Translation Should Be  french
 
 *** Keywords ***
