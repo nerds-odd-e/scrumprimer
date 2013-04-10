@@ -3,19 +3,17 @@ Feature: Viewer visits the Pages
  As a viewer
  I want to see the pages of scrum primer
 
- Scenario: View Scrum Logo
-  Given I am on the home page
-  Then Page should contains a "scrumprimerlogo.png"
-  
- Scenario: View Scrum Overview
-  Given I am on the overview page
-  Then Page should contains a good "overview/overview.png"
- 
- Scenario: View Scrum Anime
-  Given I am on the anime page
-  Then Page should contains a beautiful "overview/anime_scrum_overview_small.png"    
+ Scenario Outline: Checking images
+  Given I am on the <URL>
+  Then I should see the image <Image>
 
- Scenario Outline: Menu url
+  Examples:
+   | URL             | Image                                      |
+   | "/"             | "scrumprimerlogo.png"                      |
+   | "/overview"     | "overview/overview.png"                    |
+   | "/anime"        | "overview/anime_scrum_overview_small.png"  |    
+
+ Scenario Outline: Checking content
   Given I am on the <URL>
   Then I should see <Content>
 
