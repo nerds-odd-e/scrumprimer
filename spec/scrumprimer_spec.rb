@@ -31,7 +31,7 @@ describe "Scrum Primer Basic Specs" do
   it "can click on the overview tab" do
     visit '/'
     click_link "Overview Picture"
-    page.should have_content "PDF versions of the overview:"
+    page.should have_content "PDF versions of the Overview picture"
     current_path.should== "/overview"    
   end
   
