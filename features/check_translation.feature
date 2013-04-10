@@ -6,5 +6,5 @@ Feature: Translation Page
   Scenario: Default translation language
     Given I am on the home page
     When I go to translation page
-    Then I will see scrum primer in simplified chinese
+    Then I will see scrum primer in simplified_chinese
 
