@@ -16,6 +16,5 @@ install:
 
 script:
   - bundle install 
-  - rake
   - rackup -D
-  - pybot --noncritical "developing" robottests
+  - rake
