@@ -19,11 +19,12 @@ class ScrumPrimerApp < Sinatra::Application
     }
   end
   
-  def generate_menu_list (active_tab)
+  def generate_menu_list (active_tab, current_locale = nil)
     menu_list = ""
+    locale = current_locale ? "#{current_locale}/" : ''
     @menu_url_and_names.each { |url, description|
       active = (url.to_s == "#{active_tab}") ? ' class="active "' : ""
-      menu_list += "<li #{active} id=nav#{url.capitalize}> <a href=\"/#{url}\">#{description}</a></li>\n"
+      menu_list += "<li #{active} id=nav#{url.capitalize}> <a href=\"/#{locale}#{url}\">#{description}</a></li>\n"
     }
     menu_list
   end
@@ -34,9 +35,9 @@ class ScrumPrimerApp < Sinatra::Application
     erb :"#{tab}"
   end
 
-  get '/:locale/:tab?' do
+  get '/:locale/?:tab?' do
     tab = params[:tab] || 'home'
-    @menu_list = generate_menu_list(tab)
+    @menu_list = generate_menu_list(tab, params[:locale])
     erb :"#{tab}"
   end
 end

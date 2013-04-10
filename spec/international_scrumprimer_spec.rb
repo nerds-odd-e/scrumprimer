@@ -19,4 +19,16 @@ describe "International Scrum Primer" do
     visit '/cn/'
     page.should have_content "当前版本"
   end
+
+  it "has tabs that uses default links if page is accessed without locale" do
+  	visit '/'
+  	click_link 'Translations'
+  	current_path.should== '/translations'   	
+  end	
+
+  it "has tabs that will use locale when accessed initially with that specific locale" do
+  	visit '/cn/home'
+  	click_link 'Translations'
+  	current_path.should== '/cn/translations'  
+  end	
 end
