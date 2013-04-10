@@ -1,0 +1,54 @@
+#!/bin/sh
+#
+# ScrumPrimer.org
+#
+# Scrum Primer site and document
+
+set -e
+
+echo ""
+echo "  ScrumPrimer.org"
+echo "  Scrum Primery site and document"
+echo ""
+
+# Check for Bundler
+if test ! $(which bundle); then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."  
+fi
+
+# Check for Pip / Python
+if test ! $(which pip); then
+  echo "  x You need to install Python 2.7."
+  echo "    You can use pyenv to manage Python installations: https://github.com/yyuu/pyenv"
+  exit
+else
+  echo "  + Python found."
+fi
+
+# Install gems
+echo "  + Bootstrapping your Rubies."
+bundle install --binstubs --path vendor/gems --quiet
+
+# If we have rbenv, let's run `rbenv rehash`
+if test ! $(which rbenv); then
+  echo "  + Rehashing Ruby environment as you are using rbenv."
+  rbenv rehash
+fi
+
+# Install Robot Framework
+echo "  + Installing Python packages."
+pip -q install robotframework
+pip -q install robotframework-selenium2library
+
+# If we have pyenv, let's run `pyenv rehash`
+if test ! $(which pyenv); then
+  echo "  + Rehashing Python environment as you are using pyenv."
+  pyenv rehash
+fi
+
+echo ""
+echo "  We're ready to rock!"

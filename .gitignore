@@ -2,3 +2,6 @@ log.html
 output.xml
 report.html
 *screenshot*png
+.bundle
+bin
+vendor
