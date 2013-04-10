@@ -31,7 +31,7 @@ fi
 
 # Install gems
 echo "  + Bootstrapping your Rubies."
-bundle install --binstubs --path vendor/gems --quiet
+bundle install
 
 # If we have rbenv, let's run `rbenv rehash`
 if test ! $(which rbenv); then
