@@ -8,6 +8,7 @@ task :default => [:test_everything]
 
 task :test_everything do   
    	Rake::Task['rspec'].invoke
+   	Rake::Task['integration'].invoke
     Rake::Task['cucumber_tests'].invoke 
    	Rake::Task['robot_tests'].invoke
    	Rake::Task['check_external_links'].invoke
