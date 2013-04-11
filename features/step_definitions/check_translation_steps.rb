@@ -9,7 +9,7 @@ end
 
 When(/^I go to japanese language page$/) do
   visit '/translations'
-  click_button  "日本語"
+  switch_to_japanese  
 end
 
 Then(/^I will see scrum primer in (.*)$/) do |language|
@@ -24,5 +24,9 @@ end
 
 def confirm_download_link(language, version)
   page.should have_link( "Scrum Overview Version "+version, {:href =>"/overview/scrum_overview"+version+"_"+language+".pdf" })
+end
+
+def switch_to_japanese
+  click_button '日本語' 
 end
 
