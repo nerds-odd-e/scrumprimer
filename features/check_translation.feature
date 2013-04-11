@@ -7,4 +7,9 @@ Feature: Translation Page
     Given I am on the home page
     When I go to translation page
     Then I will see scrum primer in simplified_chinese
+  
+  @javascript
+  Scenario: Switch language
+    When I go to japanese language page
+    Then I will see scrum primer in japanese 
 

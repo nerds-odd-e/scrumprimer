@@ -1,9 +1,15 @@
+# encoding: UTF-8
 Given(/^I am on the home page$/) do
   visit '/'
 end
 
 When(/^I go to translation page$/) do
   click_link 'Translations'
+end
+
+When(/^I go to japanese language page$/) do
+  visit '/translations'
+  click_button  "日本語"
 end
 
 Then(/^I will see scrum primer in (.*)$/) do |language|
