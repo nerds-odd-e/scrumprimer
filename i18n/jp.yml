@@ -25,11 +25,11 @@ overview:
 anime:
   scrum_overview_anime_version: スクラム概要（アニメ版）
   scrum_overview_blue: スクラム概要（青）
-  scrum_overview_pink: スクラム概要（ピンク）Scrum Overview - Pink
-  scrum_overview_green: スクラム概要（緑）Scrum Overview - Green
-  high_resolution_versions: スクラム概要（高解像度版）High-resolution versions of the overview
+  scrum_overview_pink: スクラム概要（ピンク）
+  scrum_overview_green: スクラム概要（緑）
+  high_resolution_versions: スクラム概要（高解像度版）
 
 about:
-  scrum_primer_creation: スクラム入門の制作について　Scrum Primer Creation
+  scrum_primer_creation: スクラム入門の制作について
   scrum_primer_creation_description_1: 最初のスクラム入門はPete DeemerとGabrielle BenefieldがYahoo!でアジャイル化を進める過程で作られました。そして、Craing LarmanとBas Voddeがスクラムのスケーリングにつての本を書いている時にスクラムの概要を新たに書きたくなかったので、Pete DeemerとGabrielle Benefieldと一緒にスクラム入門を書き直しました。
   scrum_primer_creation_description_2: スクラム入門２．０はInfoQ向けに最新の状況に適応した変更を加えたバージョンとなります。
