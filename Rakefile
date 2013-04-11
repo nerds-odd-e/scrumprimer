@@ -8,7 +8,7 @@ task :default => [:test_everything]
 
 task :test_everything do   
    	Rake::Task['rspec'].invoke
-	  Rake::Task['cucumber_tests'].invoke 
+    Rake::Task['cucumber_tests'].invoke 
    	Rake::Task['robot_tests'].invoke
    	Rake::Task['check_external_links'].invoke
 end
@@ -16,6 +16,11 @@ end
 desc "Run the spec tasks"
 RSpec::Core::RakeTask.new(:rspec) do |t|
   t.rspec_opts = ["--tag ~integration"]
+end
+
+desc "Run the integration spec tasks"
+RSpec::Core::RakeTask.new(:integration) do |t|
+  t.rspec_opts = ["--tag integration"]
 end
 
 task :robot_tests do
