@@ -35,10 +35,17 @@ class ScrumPrimerApp < Sinatra::Application
     erb :"#{tab}"
   end
 
-  get '/:locale/?:tab?' do
-    tab = params[:tab] || 'home'
-    @menu_list = generate_menu_list(tab, params[:locale])
+  get %r{^/(.*)/(home|translations|overview|anime|about|contact)?$} do |locale, tab|    
+    R18n.set(locale)
+    tab = tab || 'home'
+    @menu_list = generate_menu_list(tab, locale)
     erb :"#{tab}"
+  end
+  
+  get '/*' do
+    status 404
+    @menu_list = generate_menu_list(:none)
+    erb :notfound
   end
 end
 

@@ -1,3 +1,4 @@
+# encoding: utf-8
 require './scrumprimer'
 require 'capybara'
 require 'capybara/dsl'
@@ -55,4 +56,11 @@ describe "Scrum Primer Basic Specs" do
     page.should have_content "Feedback"
     current_path.should== "/contact"    
   end
+  
+  it "should go to the 404 page when going to an URL that doesn't exist" do
+    visit '/doesntexist'
+    page.should have_content "404"
+    page.status_code.should == 404     
+  end
+    
 end

@@ -8,13 +8,15 @@ task :default => [:test_everything]
 
 task :test_everything do   
    	Rake::Task['rspec'].invoke
-	Rake::Task['cucumber_tests'].invoke 
+	  Rake::Task['cucumber_tests'].invoke 
    	Rake::Task['robot_tests'].invoke
    	Rake::Task['check_links'].invoke
 end
 
 desc "Run the spec tasks"
-RSpec::Core::RakeTask.new(:rspec)
+RSpec::Core::RakeTask.new(:rspec) do |t|
+  t.rspec_opts = ["--tag ~integration"]
+end
 
 task :robot_tests do
 	sh "pybot -d robottests/output --noncritical 'developing' robottests"
