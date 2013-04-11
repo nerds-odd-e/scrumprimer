@@ -1,23 +1,35 @@
 home:
   navigation: 
-    home: Home
-    translations: Translations
-    overview: Overview Picture
-    anime: Anime Overview
-    about: About
-    contact: Contact
+    home: ホーム
+    translations: 翻訳
+    overview: 概要
+    anime: アニメ概要
+    about: 説明
+    contact: お問い合わせ
 
   body: 
-    download_small_file: Download here - Small file
-    download_print_quality_file: Download here - Print quality
-    current_version: Current Version  
-    translations: Translations
+    download_small_file: ダウンロード（ファイルサイズ小） 
+    download_print_quality_file: ダウンロード（ファイルサイズ大）
+    current_version: 最新版
+    translations: 翻訳
     
 overview:
-  scrum_primer_translations: Scrum Primer Translations  
-  scrum_overview_picture: Scrum Overview Picture
-  overview_picture_pdf_versions: PDF versions of the Overview picture
-  scrum_overview_v1: Scrum Overview Version 1
-  scrum_overview_v2: Scrum Overview Version 2
-  feel_free_to_use: Feel free to use it in your own material.
-  work_is_licensed_under: This work is licensed under a  
+  scrum_primer_translations: スクラム入門翻訳版  
+  scrum_overview_picture: スクラム概要の絵
+  overview_picture_pdf_versions: スクラム概要PDF
+  scrum_overview_v1: スクラム概要バージョン１
+  scrum_overview_v2: スクラクム概要バージョン２
+  feel_free_to_use: このコンテンツはご自由にお使い下さい
+  work_is_licensed_under: コンテンツのライセンスについては下記をご確認下さい 
+
+anime:
+  scrum_overview_anime_version: スクラム概要（アニメ版）
+  scrum_overview_blue: スクラム概要（青）
+  scrum_overview_pink: スクラム概要（ピンク）
+  scrum_overview_green: スクラム概要（緑）
+  high_resolution_versions: スクラム概要（高解像度版）
+
+about:
+  scrum_primer_creation: スクラム入門の制作について
+  scrum_primer_creation_description_1: 最初のスクラム入門はPete DeemerとGabrielle BenefieldがYahoo!でアジャイル化を進める過程で作られました。そして、Craing LarmanとBas Voddeがスクラムのスケーリングにつての本を書いている時にスクラムの概要を新たに書きたくなかったので、Pete DeemerとGabrielle Benefieldと一緒にスクラム入門を書き直しました。
+  scrum_primer_creation_description_2: スクラム入門２．０はInfoQ向けに最新の状況に適応した変更を加えたバージョンとなります。

@@ -33,15 +33,14 @@ overview:
   feel_free_to_use: Feel free to use it in your own material.
   work_is_licensed_under: This work is licensed under a
 
-
-
-
-
-
-
 anime:
   scrum_overview_anime_version: Scrum Overview - Anime version
   scrum_overview_blue: Scrum Overview - Blue
   scrum_overview_pink: Scrum Overview - Pink
   scrum_overview_green: Scrum Overview - Green
   high_resolution_versions: High-resolution versions of the overview
+
+about:
+  scrum_primer_creation: Scrum Primer Creation
+  scrum_primer_creation_description_1: Scrum Primer was originally created by Pete Deemer and Gabrielle Benefield when they were both working in Yahoo! on their agile transition. When Craig Larman and Bas Vodde were working on their first Scaling Scrum book, they wanted to use a good introduction of Scrum as a reference but didn't want to write a new one. They joined forces with Pete and Gabrielle and all together rewrote the Scrum Primer. 
+  scrum_primer_creation_description_2: The Scrum Primer 2.0 version was created for InfoQ and for being more consistent with the latest descriptions of Scrum. 

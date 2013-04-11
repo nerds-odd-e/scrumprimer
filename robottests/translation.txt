@@ -7,16 +7,24 @@ Test TearDown  Close Browser
 
 *** Test Cases ***
 
+Checking All Language Images  [Template]  Can switch to other language
+   简体中文  simplified_chinese
+   Việt  vietnamese
+   日本語  japanese
+   한국의  korean
+   Français  french
+   Deutsch  german
+   Español  spanish
+   български  bulgarian
+
 Default Translation Should be Chinese
     Confirm Translation Should Be  simplified_chinese
 
-Can switch to other language
-    Click Button  日本語
-    Confirm Translation Should Be  japanese
-    Click Button  Français
-    Confirm Translation Should Be  french
-
 *** Keywords ***
+Can switch to other language  [Arguments]  ${button}  ${language}
+    Click Button  ${button} 
+    Confirm Translation Should Be  ${language}
+
 Enter Translation
     Open Browser  ${BASE_URL}  ${BROWSER}
     Click Link  Translations
