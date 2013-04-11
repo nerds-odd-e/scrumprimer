@@ -10,7 +10,7 @@ task :test_everything do
    	Rake::Task['rspec'].invoke
 	  Rake::Task['cucumber_tests'].invoke 
    	Rake::Task['robot_tests'].invoke
-   	Rake::Task['check_links'].invoke
+   	Rake::Task['check_external_links'].invoke
 end
 
 desc "Run the spec tasks"
@@ -34,7 +34,7 @@ Cucumber::Rake::Task.new(:cucumber_tests) do |t|
 end
 
 desc "Link checking on ScrumPrimer.org"
-task :check_links do
+task :check_external_links do
   require 'link_checker'
   LinkChecker.new(:target => 'http://127.0.0.1:9292').check_uris
 end
