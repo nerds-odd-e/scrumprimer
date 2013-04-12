@@ -6,5 +6,6 @@ report.html
 bin
 vendor
 *.swp
+*.rb.swp
 link-checker-crawled-pages.pstore
 node_modules

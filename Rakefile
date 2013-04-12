@@ -8,22 +8,31 @@ task :default => [:test_everything]
 
 task :test_everything do   
    	Rake::Task['rspec'].invoke
-	Rake::Task['cucumber_tests'].invoke 
-   	Rake::Task['robot_tests'].invoke
-   	Rake::Task['check_links'].invoke
+   	
+   	Rake::Task['run_rackup_daemon'].invoke
+   	
+   	begin
+   	  Rake::Task['integration'].invoke
+      Rake::Task['cucumber_tests'].invoke 
+   	  Rake::Task['robot_tests'].invoke
+   	  Rake::Task['check_external_links'].invoke
+   	ensure
+   	  Rake::Task['stop_rackup_daemon'].invoke
+ 	  end
 end
 
 desc "Run the spec tasks"
-RSpec::Core::RakeTask.new(:rspec)
+RSpec::Core::RakeTask.new(:rspec) do |t|
+  t.rspec_opts = ["--tag ~integration"]
+end
+
+desc "Run the integration spec tasks"
+RSpec::Core::RakeTask.new(:integration) do |t|
+  t.rspec_opts = ["--tag integration"]
+end
 
 task :robot_tests do
 	sh "pybot -d robottests/output --noncritical 'developing' robottests"
-end
-
-desc "run the server"
-task :run do |t|
-	require "./scrumprimer.rb"
-  	ScrumPrimerApp.run!
 end
 
 desc "run cucumber features"
@@ -32,8 +41,20 @@ Cucumber::Rake::Task.new(:cucumber_tests) do |t|
 end
 
 desc "Link checking on ScrumPrimer.org"
-task :check_links do
+task :check_external_links do
   require 'link_checker'
   LinkChecker.new(:target => 'http://127.0.0.1:9292').check_uris
 end
 
+desc "Startup rackup as a daemon and store the pid"
+task :run_rackup_daemon do
+  sh "rackup -D -P rackup.pid"
+end
+
+desc "Kill rackup based on the pid"
+task :stop_rackup_daemon do
+  sh "kill -9 `cat rackup.pid`"
+  sh "rm -f rackup.pid"
+end
+
+  
