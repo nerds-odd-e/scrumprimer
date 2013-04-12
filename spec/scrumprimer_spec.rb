@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require './scrumprimer'
 require 'capybara'
 require 'capybara/dsl'
@@ -55,4 +56,15 @@ describe "Scrum Primer Basic Specs" do
     page.should have_content "Feedback"
     current_path.should== "/contact"    
   end
+
+  it "has all pages with links to all available locales in the i18n directory" do
+    visit '/about'    
+    locales = []
+    Dir.glob("./i18n/*.yml") {|file| locales << File.basename(file, ".*")}
+    
+    locales.each { |locale|
+      page.find("a[href='/#{locale}']").should be_true
+    }
+    
+  end 
 end

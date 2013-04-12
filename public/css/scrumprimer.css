@@ -24,3 +24,19 @@ body {
 .logo {
 	text-align: center;
 }
+
+#translation_links {
+	float: right;
+}
+
+#translation_links li {
+	display: inline;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1em;
+	font-size: 0.8em
+}
+
+#translation_links a {
+	color: #aaa
+}

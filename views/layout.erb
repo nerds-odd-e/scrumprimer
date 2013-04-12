@@ -35,11 +35,19 @@
 						<%= @menu_list %>
 					</ul>
 					<hr>
+					<div id="translation_links">
+			          <ul id="translation_links">
+                        <% @available_locales.each do |locale| %> 
+                        <li><a href="/<%= locale.code.downcase %>"><%= t[locale.code] %></a></li>	
+                        <% end %>	                        
+                      </ul>
+                    </div>
 				</div>
 			</div>
 			<%= yield %>			
-		</div>
 
+		</div>
+       
     <!--     JavaScript -->
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap-tab.js"></script>

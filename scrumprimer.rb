@@ -17,6 +17,12 @@ class ScrumPrimerApp < Sinatra::Application
       :contact => t.home.navigation.contact
     }
   end
+
+  def generate_locales_link
+    locale_links = []
+    i18n.available_locales.each  { |available_locale| locale_links << available_locale  }
+    locale_links 
+  end  
   
   def generate_menu_list (active_tab, current_locale = nil)
     initialize_menu
@@ -32,12 +38,14 @@ class ScrumPrimerApp < Sinatra::Application
   get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|    
     tab = tab || 'home'
     @menu_list = generate_menu_list(tab)
+    @available_locales = generate_locales_link()
     erb :"#{tab}"
   end
 
   get '/:locale/?:tab?' do
     tab = params[:tab] || 'home'
     @menu_list = generate_menu_list(tab, params[:locale])
+    @available_locales = generate_locales_link()
     erb :"#{tab}"
   end
 end
