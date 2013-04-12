@@ -28,12 +28,6 @@ task :robot_tests do
 	sh "pybot -d robottests/output --noncritical 'developing' robottests"
 end
 
-desc "run the server"
-task :run do |t|
-	require "./scrumprimer.rb"
-  	ScrumPrimerApp.run!
-end
-
 desc "run cucumber features"
 Cucumber::Rake::Task.new(:cucumber_tests) do |t|
   	t.cucumber_opts = "features --format pretty"
