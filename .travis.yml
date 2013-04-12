@@ -16,5 +16,4 @@ install:
 
 script:
   - bundle install 
-  - rackup -D
   - rake
