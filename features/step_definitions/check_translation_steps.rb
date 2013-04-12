@@ -3,16 +3,16 @@ Given(/^I am on the home page$/) do
   visit '/'
 end
 
-When(/^I go to translation page$/) do
+When(/^I go to scrum primer overview translation page$/) do
   click_link 'Translations'
 end
 
-When(/^I go to japanese language page$/) do
+When(/^I go to japanese picture$/) do
   visit '/translations'
   switch_to_japanese  
 end
 
-Then(/^I will see scrum primer in (.*)$/) do |language|
+Then(/^I will see scrum primer overview in (.*)$/) do |language|
   confirm_scrum_primer_in language
   confirm_download_link language, "1"
   confirm_download_link language, "2"
