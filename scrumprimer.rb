@@ -26,11 +26,11 @@ class ScrumPrimerApp < Sinatra::Application
   
   def generate_menu_list (active_tab, current_locale = nil)
     initialize_menu
-    menu_list = ""
+    menu_list = []
     locale = current_locale ? "#{current_locale}/" : ''
     @menu_url_and_names.each { |url, description|
-      active = (url.to_s == "#{active_tab}") ? ' class="active "' : ""
-      menu_list += "<li #{active} id=nav#{url.capitalize}> <a href=\"/#{locale}#{url}\">#{description}</a></li>\n"
+      active = (url.to_s == "#{active_tab}") ? ' class="active"' : ""
+      menu_list << {"li_class" => active, "url" => url, "description" => description, "locale" => locale}
     }
     menu_list
   end
