@@ -58,7 +58,6 @@ describe "Scrum Primer Basic Specs" do
     current_path.should== "/contact"    
   end
 
-
   it "has all pages with links to all available locales in the i18n directory" do
     visit '/about'    
     locales = []
@@ -69,13 +68,11 @@ describe "Scrum Primer Basic Specs" do
     }
     
   end 
-
   
   it "should go to the 404 page when going to an URL that doesn't exist" do
     visit '/doesntexist'
     page.should have_content "404"
     page.status_code.should == 404     
   end
-    
 
 end
