@@ -9,7 +9,19 @@ Feature: Translation Page
     Then I will see scrum primer overview in simplified_chinese
   
   @javascript
-  Scenario: Switch to japanese scrum overview picture
-    When I go to japanese picture
-    Then I will see scrum primer overview in japanese 
+  Scenario Outline: Switch to <language> scrum overview picture
+    When I go to target picture by click <language_page> button
+    Then I will see scrum primer overview in <language> 
+  
+    Examples:
+     | language           | language_page |
+     | vietnamese         | "Việt"        |     
+     | french             | "Français"    |
+     | german             | "Deutsch"     |
+     | spanish            | "Español"     |
+     | bulgarian          | "български"   |
+     | japanese           | "日本語"        |   
+     | korean             | "한국의"        |               
 
+
+        

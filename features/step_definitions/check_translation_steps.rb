@@ -12,6 +12,11 @@ When(/^I go to japanese picture$/) do
   switch_to_japanese  
 end
 
+When(/^I go to target picture by click "(.*?)" button$/) do |language_page|
+  visit '/translations'
+  click_button language_page 
+end
+
 Then(/^I will see scrum primer overview in (.*)$/) do |language|
   confirm_scrum_primer_in language
   confirm_download_link language, "1"
