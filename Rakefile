@@ -8,10 +8,17 @@ task :default => [:test_everything]
 
 task :test_everything do   
    	Rake::Task['rspec'].invoke
-   	Rake::Task['integration'].invoke
-    Rake::Task['cucumber_tests'].invoke 
-   	Rake::Task['robot_tests'].invoke
-   	Rake::Task['check_external_links'].invoke
+   	
+   	Rake::Task['run_rackup_daemon'].invoke
+   	
+   	begin
+   	  Rake::Task['integration'].invoke
+      Rake::Task['cucumber_tests'].invoke 
+   	  Rake::Task['robot_tests'].invoke
+   	  Rake::Task['check_external_links'].invoke
+   	ensure
+   	  Rake::Task['stop_rackup_daemon'].invoke
+ 	  end
 end
 
 desc "Run the spec tasks"
@@ -39,3 +46,15 @@ task :check_external_links do
   LinkChecker.new(:target => 'http://127.0.0.1:9292').check_uris
 end
 
+desc "Startup rackup as a daemon and store the pid"
+task :run_rackup_daemon do
+  sh "rackup -D -P rackup.pid"
+end
+
+desc "Kill rackup based on the pid"
+task :stop_rackup_daemon do
+  sh "kill -9 `cat rackup.pid`"
+  sh "rm -f rackup.pid"
+end
+
+  

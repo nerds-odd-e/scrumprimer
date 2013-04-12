@@ -13,7 +13,7 @@ Detect (Simplified) Chinese Language Of Browser
 
 *** Keywords ***
 Page Language Should Be English
-    Location Should Be  ${BASE_URL}
+    Page Should Contain  Current Version
 
 Page Language Should Be Simplified Chinese
     Page Should Contain  当前版本
