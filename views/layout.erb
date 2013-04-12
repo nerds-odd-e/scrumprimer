@@ -32,14 +32,25 @@
 				<div class="span2"></div>
 				<div class="span8">
 					<ul class="nav nav-pills" id="mainTabs">
-						<%= @menu_list %>
+						<% @menu_list.each do |menu_item| %>
+						<li <%= menu_item['li_class'] %> id=nav<%= menu_item['url'].capitalize %> > <a href="/<%= menu_item['locale'] %><%= menu_item['url'] %>"><%= menu_item['description'] %></a></li>
+						<% end %>
+
 					</ul>
 					<hr>
+					<div id="translation_links">
+			          <ul id="translation_links">
+                        <% @available_locales.each do |locale| %> 
+                        <li><a href="/<%= locale.code.downcase %>/"><%= t[locale.code] %></a></li>	
+                        <% end %>	                        
+                      </ul>
+                    </div>
 				</div>
 			</div>
 			<%= yield %>			
-		</div>
 
+		</div>
+       
     <!--     JavaScript -->
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap-tab.js"></script>

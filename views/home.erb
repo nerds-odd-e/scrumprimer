@@ -14,19 +14,19 @@
 			<div class="span3">
 				<h4><%= t.home.body.current_version %></h4>
 				<p>
-					<a href="scrumprimer20_small.pdf"><%= t.home.body.download_small_file %></a><br/>
-					<a href="scrumprimer20.pdf"><%= t.home.body.download_print_quality_file %></a>
+					<a href="/scrumprimer20_small.pdf"><%= t.home.body.download_small_file %></a><br/>
+					<a href="/scrumprimer20.pdf"><%= t.home.body.download_print_quality_file %></a>
 				</p>
 			</div>			
 			
 			<div class="span3">
 				<h4><%= t.home.body.translations %></h4>
-				<a href="primers/scrumprimer20_french.pdf"><%= t.home.body.scrum_primer_in_french %></a><br/>
+				<a href="/primers/scrumprimer20_french.pdf"><%= t.home.body.scrum_primer_in_french %></a><br/>
 				
 				<p><%= t.home.body.currently_in_progress %>:</p>
 				<ul>
-					<li><%= t.chinese %></li>
-					<li><%= t.japanese %></li>
+					<li><%= t["zh-CN"] %></li>
+					<li><%= t["jp"] %></li>
 				</ul>
 			</div>
 		</div>
