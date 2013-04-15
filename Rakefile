@@ -12,6 +12,7 @@ task :test_everything do
    	Rake::Task['run_rackup_daemon'].invoke
    	
    	begin
+   	  Rake::Task['jasmine:ci'].invoke
    	  Rake::Task['integration'].invoke
       Rake::Task['cucumber_tests'].invoke 
    	  Rake::Task['robot_tests'].invoke
@@ -58,3 +59,11 @@ task :stop_rackup_daemon do
 end
 
   
+begin
+  require 'jasmine'
+  load 'jasmine/tasks/jasmine.rake'
+rescue LoadError
+  task :jasmine do
+    abort "Jasmine is not available. In order to run jasmine, you must: (sudo) gem install jasmine"
+  end
+end
