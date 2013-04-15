@@ -21,13 +21,15 @@ describe "Link checking tests" do
     end    
   end
     
-  def retrieve_all_tag_sources (tag, attribute)
+  def retrieve_all_tag_sources (tag, attribute, must_be_present = :required)
     img_srcs = []
     anemone_on_every_page ("http://localhost:9292/") do |page|
       next unless page.html?
         
       page.doc.css(tag).map do |element|
-        img_srcs << URI::Parser.new.parse(element[attribute])
+        if must_be_present == :required  || (must_be_present == :optional && element[attribute])
+          img_srcs << URI::Parser.new.parse(element[attribute]) 
+        end
       end
     end
     img_srcs
@@ -62,6 +64,16 @@ describe "Link checking tests" do
 
   it "Check all links", :integration => true do
     retrieve_all_tag_sources('link', 'href').each do |url|
+      http_get_relative_or_absolute(url, "localhost", 9292) do |response|
+        rspec_add_failure_message("  (For page: #{url.to_s})") do
+          response.kind_of?(Net::HTTPSuccess).should== true
+        end  
+      end
+    end    
+  end
+
+  it "Check all scripts", :integration => true do
+    retrieve_all_tag_sources('script', 'src', :optional).each do |url|
       http_get_relative_or_absolute(url, "localhost", 9292) do |response|
         rspec_add_failure_message("  (For page: #{url.to_s})") do
           response.kind_of?(Net::HTTPSuccess).should== true
