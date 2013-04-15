@@ -8,14 +8,15 @@ Test TearDown  Close Browser
 *** Test Cases ***
 
 Checking All Language Images  [Template]  Can switch to other language
-   简体中文  simplified_chinese
-   Việt  vietnamese
-   日本語  japanese
-   한국의  korean
-   Français  french
-   Deutsch  german
-   Español  spanish
-   български  bulgarian
+   Chinese  simplified_chinese
+   Vietnamese  vietnamese
+   Japanese  japanese
+   Korean  korean
+   Thai  thai
+   French  french
+   German  german
+   Spanish  spanish
+   Bulgarian  bulgarian
 
 Default Translation Should be Chinese
     Confirm Translation Should Be  simplified_chinese

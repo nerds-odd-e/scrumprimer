@@ -15,13 +15,15 @@ Feature: Translation Page
   
     Examples:
      | language           | language_page |
-     | vietnamese         | "Việt"        |     
-     | french             | "Français"    |
-     | german             | "Deutsch"     |
-     | spanish            | "Español"     |
-     | bulgarian          | "български"   |
-     | japanese           | "日本語"        |   
-     | korean             | "한국의"        |               
+     | simplified_chinese | "Chinese"     |     
+     | vietnamese         | "Vietnamese"  |     
+     | japanese           | "Japanese"    |   
+     | korean             | "Korean"      |               
+     | thai               | "Thai"        |
+     | french             | "French"      |
+     | german             | "German"      |
+     | spanish            | "Spanish"     |
+     | bulgarian          | "Bulgarian"   |
 
 
         

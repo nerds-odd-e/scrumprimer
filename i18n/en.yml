@@ -23,7 +23,20 @@ home:
     current_version: Current Version  
     translations: Translations
     scrum_primer_in_french: Scrum Primer in French
+    scrum_primer_in_simplified_chinese: Scrum Primer in Simplified Chinese
+    scrum_primer_in_bulgarian: Scrum Primer in Bulgarian
     currently_in_progress: Currently In Progress
+
+translations:
+  simplified_chinese: Chinese
+  vietnamese: Vietnamese
+  japanese: Japanese
+  korean: Korean
+  thai: Thai
+  french: French
+  german: German
+  spanish: Spanish
+  bulgarian: Bulgarian
 
 overview:
   scrum_primer_translations: Scrum Primer Translations  
