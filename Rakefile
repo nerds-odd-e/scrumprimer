@@ -3,6 +3,7 @@ require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
 require 'rspec/core/rake_task'
+require "jshintrb/jshinttask"
 
 task :default => [:test_everything]
 
@@ -67,3 +68,9 @@ rescue LoadError
     abort "Jasmine is not available. In order to run jasmine, you must: (sudo) gem install jasmine"
   end
 end
+
+Jshintrb::JshintTask.new :jshint do |t|
+  t.pattern = 'public/js/**/scrumprimer.js'
+  t.options = :defaults
+end
+
