@@ -32,7 +32,7 @@ Also the site is used as an example of test technologies in order to compare the
 
 * [RSpec](https://github.com/rspec/rspec)
 * [Jasmine](http://pivotal.github.io/jasmine/)
-* [Mocha](https://github.com/visionmedia/mocha) (TBD)
+* [Mocha](https://github.com/visionmedia/mocha) (TBD most likely via karma-runner)
 * [Cucumber](https://github.com/cucumber/cucumber)
 * [Robot Framework](http://code.google.com/p/robotframework/)
 
