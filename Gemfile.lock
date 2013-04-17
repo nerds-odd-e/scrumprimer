@@ -91,6 +91,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  certified
   cucumber
   jasmine
   jshintrb
