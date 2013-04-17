@@ -8,7 +8,7 @@ de: Deutsch
 es: Español
 bg: български
 
-home:
+main:
   navigation: 
     home: Home
     translations: Translations
@@ -16,8 +16,9 @@ home:
     anime: Anime Overview
     about: About
     contact: Contact
+  github_contribution: This page is open source and contributions in either content, language, or graphics are welcome. The source is at <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
 
-  body: 
+home:
     download_small_file: Download here - Small file
     download_print_quality_file: Download here - Print quality
     current_version: Current Version  

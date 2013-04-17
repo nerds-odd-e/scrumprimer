@@ -1,13 +1,15 @@
-home:
-  navigation: 
-    home: ホーム
-    translations: 翻訳
-    overview: 概要
-    anime: アニメ概要
-    about: 説明
-    contact: お問い合わせ
 
-  body: 
+
+main:
+    navigation: 
+      home: ホーム
+      translations: 翻訳
+      overview: 概要
+      anime: アニメ概要
+      about: 説明
+      contact: お問い合わせ
+    
+home:
     download_small_file: ダウンロード（ファイルサイズ小） 
     download_print_quality_file: ダウンロード（ファイルサイズ大）
     current_version: 最新版

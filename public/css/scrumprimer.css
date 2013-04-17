@@ -40,3 +40,13 @@ body {
 #translation_links a {
 	color: #aaa
 }
+
+#github_contribution {
+	float: right;
+	display: inline;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1em;
+	font-size: 0.8em;
+	color: #aaa
+}

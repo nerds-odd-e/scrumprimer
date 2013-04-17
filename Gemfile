@@ -7,7 +7,8 @@ gem "capybara"
 gem "rspec"
 gem 'jasmine'
 gem 'jshintrb'
-gem "link-checker"
+gem "link-checker", :git => 'git://github.com/basvodde/link-checker'
+
 group :assets do
 	gem "rake"
 end
