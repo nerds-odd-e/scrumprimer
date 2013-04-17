@@ -9,12 +9,12 @@ class ScrumPrimerApp < Sinatra::Application
 
   def initialize_menu    
     @menu_url_and_names = {
-      :home => t.home.navigation.home,
-      :translations => t.home.navigation.translations,
-      :overview => t.home.navigation.overview,
-      :anime => t.home.navigation.anime,
-      :about => t.home.navigation.about,
-      :contact => t.home.navigation.contact
+      :home => t.main.navigation.home,
+      :translations => t.main.navigation.translations,
+      :overview => t.main.navigation.overview,
+      :anime => t.main.navigation.anime,
+      :about => t.main.navigation.about,
+      :contact => t.main.navigation.contact
     }
   end
 
