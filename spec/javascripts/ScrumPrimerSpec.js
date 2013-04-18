@@ -6,14 +6,14 @@ describe("Scrum Primer Overview translation buttons", function() {
   });
 
   it("Should load the proper overview image when calling changeLanguage", function() {
-	changeLanguage('klingon');
-	expect($('#overview_translated')).toHaveAttr("src", "/overview/scrum_overview_klingon.png");
+	changeLanguage('kl');
+	expect($('#overview_translated')).toHaveAttr("src", "/overview/kl_scrum_overview.png");
   });
 
   it("Should switch the URL for the primer when calling changeLanguage", function() {
-	changeLanguage('esperanto');
-	expect($('#overview_pic_1')).toHaveAttr("href", "/overview/scrum_overview1_esperanto.pdf");
-	expect($('#overview_pic_2')).toHaveAttr("href", "/overview/scrum_overview2_esperanto.pdf");
+	changeLanguage('eo');
+	expect($('#overview_pic_1')).toHaveAttr("href", "/overview/eo_scrum_overview1.pdf");
+	expect($('#overview_pic_2')).toHaveAttr("href", "/overview/eo_scrum_overview2.pdf");
   });
 });
 

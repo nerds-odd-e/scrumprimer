@@ -24,11 +24,11 @@ Then(/^I will see scrum primer overview in (.*)$/) do |language|
 end
 
 def confirm_scrum_primer_in(language)
-  page.should have_image '/overview/scrum_overview_'+language+'.png'
+  page.should have_image "/overview/#{language}_scrum_overview.png"
 end
 
 def confirm_download_link(language, version)
-  page.should have_link( "Scrum Overview Version "+version, {:href =>"/overview/scrum_overview"+version+"_"+language+".pdf" })
+  page.should have_link( "Scrum Overview Version "+version, {:href =>"/overview/#{language}_scrum_overview"+version+".pdf" })
 end
 
 def switch_to_japanese

@@ -21,5 +21,5 @@ Feature: Viewer visits the Pages
   Examples:
    | URL             | Image                                       |
    | "/"             | "/logo/en_scrumprimer.png"                      |
-   | "/overview"     | "/overview/overview.png"                    |
+   | "/overview"     | "/overview/en_overview.png"                    |
    | "/anime"        | "/overview/anime_scrum_overview_small.png"  |    

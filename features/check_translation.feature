@@ -6,7 +6,7 @@ Feature: Translation Page
   Scenario: Default translation language
     Given I am on the home page
     When I go to scrum primer overview translation page
-    Then I will see scrum primer overview in simplified_chinese
+    Then I will see scrum primer overview in zh-cn
   
   @javascript
   Scenario Outline: Switch to <language> scrum overview picture
@@ -15,15 +15,15 @@ Feature: Translation Page
   
     Examples:
      | language           | language_page |
-     | simplified_chinese | "Chinese"     |     
-     | vietnamese         | "Vietnamese"  |     
-     | japanese           | "Japanese"    |   
-     | korean             | "Korean"      |               
-     | thai               | "Thai"        |
-     | french             | "French"      |
-     | german             | "German"      |
-     | spanish            | "Spanish"     |
-     | bulgarian          | "Bulgarian"   |
+     | zh-cn              | "Chinese"     |     
+     | vi                 | "Vietnamese"  |     
+     | jp                 | "Japanese"    |   
+     | kr                 | "Korean"      |               
+     | th                 | "Thai"        |
+     | fr                 | "French"      |
+     | de                 | "German"      |
+     | es                 | "Spanish"     |
+     | bg                 | "Bulgarian"   |
 
 
         

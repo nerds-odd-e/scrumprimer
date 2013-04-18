@@ -3,9 +3,9 @@
 
 function changeLanguage(language) {
 	'use strict';
-	$('#overview_translated').attr('src','/overview/scrum_overview_' + language + '.png');
-	$('#overview_pic_1').attr('href','/overview/scrum_overview1_' + language + '.pdf');
-	$('#overview_pic_2').attr('href','/overview/scrum_overview2_' + language + '.pdf');
+	$('#overview_translated').attr('src','/overview/' + language + '_scrum_overview.png');
+	$('#overview_pic_1').attr('href','/overview/' + language + '_scrum_overview1.pdf');
+	$('#overview_pic_2').attr('href','/overview/' + language + '_scrum_overview2.pdf');
 }
 
 function replaceHashWithRedirect(location) {

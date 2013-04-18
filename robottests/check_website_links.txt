@@ -9,7 +9,7 @@ Scrumprimer Links  [Template]  Check Resource Exists In Path
     #PATH#         #ACTION#              #CONTENT#
     \              Check Image Exist     /logo/en_scrumprimer.png
     translations   Check Text Exist      Scrum Primer Translations
-    overview       Check Image Exist     /overview/overview.png
+    overview       Check Image Exist     /overview/en_overview.png
     anime          Check Image Exist     /overview/anime_scrum_overview_small.png
     about          Check Text Exist      Scrum Primer Creation
     contact        Check Text Exist      Feedback
