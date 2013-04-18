@@ -35,6 +35,30 @@ class ScrumPrimerApp < Sinatra::Application
     menu_list
   end
   
+  def redirect_to_public_file(file)
+    send_file File.expand_path(file, settings.public_folder)
+  end
+  
+  get '/scrumprimer20.pdf' do
+    redirect_to_public_file('primers/en_scrumprimer20.pdf')
+  end
+
+  get '/scrumprimer20_small.pdf' do
+    redirect_to_public_file('primers/en_scrumprimer20_small.pdf')
+  end
+  
+  get '/scrumprimer120.pdf' do
+    redirect_to_public_file('primers/en_scrumprimer20_small.pdf')
+  end
+
+  get '/scrumprimer199.pdf' do
+    redirect_to_public_file('primers/en_scrumprimer20_small.pdf')
+  end
+
+  get '/scrum_primer_cn.pdf' do
+    redirect_to_public_file('primers/zh-cn_scrumprimer20.pdf')
+  end
+  
   get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|    
     tab = tab || 'home'
     @menu_list = generate_menu_list(tab)

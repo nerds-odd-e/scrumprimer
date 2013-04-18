@@ -65,8 +65,7 @@ describe "Scrum Primer Basic Specs" do
     
     locales.each { |locale|
       page.find("a[href='/#{locale}/']").should be_true
-    }
-    
+    }    
   end 
   
   it "should go to the 404 page when going to an URL that doesn't exist" do
