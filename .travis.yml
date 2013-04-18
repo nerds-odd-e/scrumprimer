@@ -3,17 +3,13 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 
 language: ruby
+
 rvm:
   - 1.9.3
-gemfile:
-  - Gemfile
+
 python:
   - "2.7"
+
 install: 
   - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
-  - gem install bundler
-
-script:
-  - bundle install 
-  - rake
