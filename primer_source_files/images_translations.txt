@@ -1,0 +1,211 @@
+Translations of Scrum Primer terms.
+
+English:
+
+Scrum
+Scrum Master 
+Product Owner 
+Team 
+Items 
+Product Backlog 
+Sprint Planning part 1 and 2 
+Sprint Backlog 
+Work 
+Daily Scrum 
+One to four weeks 
+No change to goal 
+Product Backlog refinement 
+Potentialy shipable product increment 
+Sprint review 
+Retrospective
+
+Scrum Primer
+
+--------------------------------------------------------------------------------------------
+
+Chinese:
+
+product owner	产品负责人
+team			团队
+items			事项
+product backlog	产品待办事项列表
+sprint planning	Sprint计划
+part 1 and 2		第1和2部分
+work			工作
+sprint backlog	Sprint待办事项列表
+daily scrum		每日Scrum
+one to four weeks	1到4周
+no changes to goal	目标不变
+product backlog refinement	产品待办事项列表精炼
+potentially shippable produce increment		潜在可交付产品增量
+sprint review		Sprint评审
+
+retrospective		回顾
+
+Scrum Primer: Scrum简章
+--------------------------------------------------------------------------------------------
+
+Bulgarian:
+
+SCRUM: СКРЪМ
+
+Stakeholders: Заинтересовани лица
+Product Owner: Продуктов собственик
+Team: Екип
+Items: Артикули 
+Product Backlog: Продуктов баклог
+Spring planning: Планиране на спринт
+Part one and two: част първа и втора
+Work: Работа
+Spring Backlog: Спринтов баклог
+Daily scrum: Ежедневен скръм
+Sprint: Спринт 
+One to four weeks: Една до четири седмици
+No change to goal: Без промени до целта
+Product backlog refinement: Прецизиране на продуктовия баклог
+Potentially shippable product increment: Потенциално годен за изпращане продуктов инкремент
+Scrum master: Скръм майстор
+Sprint review: Преглед на спринт
+Retrospective: Ретроспектива
+Scrum: Скръм
+
+Scrum Primer: СКРЪМ БУКВАР
+
+----------------------------------------------
+
+Thai:
+
+scrum = สกรัม 
+Scrum Master = สกรัมมาสเตอร์
+Product Owner = โปรดักโอนเนอร์
+Team = ทีม
+Items = รายการที่ต้องทำ
+Product Backlog = รายการงานค้างของผลิตภัณฑ์
+Sprint Planning part 1 and 2 = การวางแผนสำหรับรอบการทำงานส่วนที่หนึ่งและสอง
+Sprint Backlog = รายการงานค้างของรอบการทำงาน
+sprint = รอบการทำงาน
+Work = งานที่ต้องทำ
+Daily Scrum = สกรัมรายวัน
+One to four weeks = หนึ่งถึงสี่สัปดาห์
+No change to goal = มีเป้าหมายที่แน่นอนไม่เปลี่ยนแปลง
+Product Backlog refinement = การปรับแต่งรายการงานค้างของผลิตภัณฑ์
+Potentialy shipable product increment = ผลิตภัณฑ์พร้อมใช้งานที่ค่อยๆเติบโตขึ้น
+Sprint review = การตรวจสอบรอบการทำงาน
+Retrospective = การพิจารณาย้อนหลัง
+
+Scrum Primer: มูลบทแห่งสกรัม 
+
+----------------------------
+
+Japanese:
+
+Scrum Master = スクラムマスター
+Product Owner = プロダクトオーナー
+Team = チーム
+Items = 項目
+Product Backlog = プロダクトバックログ
+Sprint Planning part 1 and 2 = スプリント計画　パート１　パート２
+Sprint Backlog = スプリントバックログ
+Work = ワーク
+Daily Scrum = ディリースクラム
+One to four weeks = １〜４週間
+No change to goal = ゴールの変更不可
+Product Backlog refinement = プロダクトバックログの手入れ
+Potentialy shipable product increment = 出荷可能な製品単位
+Sprint review = スプリントレビュー
+Retrospective = レトロスペクティブ（ふりかえり）
+
+Scrum Primer: スクラム入門
+Scrum: スクラム
+
+---------------------------------------------
+
+Korean:
+
+Scrum Master 스크럼 마스터
+Product Owner 제품 책임자
+Team 팀
+Items 아이템
+Product Backlog 제품 백로그
+Sprint Planning part 1 and 2 스프린트 계획1부와 2부
+Sprint Backlog 스프린트 백로그
+Work 작업
+Daily Scrum 데일리 스크럼
+One to four weeks 1~4주
+No change to goal 목표 변경 불가
+Product Backlog refinement 제품 백로그 관리
+Potentially shippable product increment 잠재적으로 출시 가능한 제품 증분
+Sprint review 스프린트 리뷰
+Retrospective 회고
+
+Scrum: 스크럼
+Scrum Primer: 스크럼 프라이머 
+
+----------------------------------------------
+
+Vietnamese:
+
+stakeholders Người Hữu trách
+product owner Chủ Sản phẩm
+Team Nhóm
+items Hạng mục
+product backlog Product Backlog
+sprint planning Lập Kế hoạch Sprint
+part 1 and 2 Phần 1 và 2 
+work Công việc
+sprint backlog Sprint Backlog
+daily scrum Scrum Hằng ngày
+one to four weeks 1-4 tuần
+no changes to goal Không thay đổi mục tiêu
+product backlog refinement Làm mịn Product Backlog
+potentially shippable product increment Gói tăng trưởng chuyển giao được
+sprint review Họp Sơ kết Sprint
+Retrospective Họp Rà soát-Cải tiến
+
+Scrum Primer: TBD
+
+-----------------------------------------------------
+
+French
+Scrum Primer: Scrum Primer
+
+----------------------------------------------------------------------
+
+Spanish:
+
+Scrum Master - Scrum Master
+Product Owner - Dueño de Producto
+Team - Equipo
+Items - Elementos 
+Product Backlog - Backlog de Producto 
+Sprint Planning part 1 and 2 - Planificación de Sprint, primera y segunda parte <-- Careful with this one
+Sprint Backlog - Backlog de Sprint
+Work - Trabajo
+Daily Scrum - Scrum Diario
+One to four weeks - De una a cuatro semanas
+No change to goal - Sin cambios en el objetivo
+Product Backlog refinement - Refinamiento de la Pila de Producto
+Potentialy shipable product increment -  Incremento de Producto potencialmente entregable
+Sprint review - Revisión del Sprint
+Retrospective - Retrospectiva
+
+------------------------------------------------------------------------------
+
+German:
+
+Scrum Master - ScrumMaster
+Product Owner - Product Owner
+Team - Entwicklungs-Team
+Items - Einträge
+Product Backlog - Product Backlog
+Sprint Planning part 1 and 2 - Sprint Planning Teil 1 und 2
+Sprint Backlog - Sprint Backlog
+Work - Entwicklungsarbeit
+Daily Scrum - Daily Scrum
+One to four weeks - Ein bis vier Wochen
+No change to goal - Keine Veränderung am Ziel
+Product Backlog refinement - Product Backlog Verfeinerung
+Potentialy shipable product increment - Potenziell auslieferbares Produktinkrement
+Sprint review - Sprint Review
+Retrospective - Retrospective
+Scrum Primer - Scrum Primer
