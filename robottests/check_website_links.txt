@@ -7,7 +7,7 @@ Test Teardown    Close Browser
 *** Test Cases ***
 Scrumprimer Links  [Template]  Check Resource Exists In Path
     #PATH#         #ACTION#              #CONTENT#
-    \              Check Image Exist     /scrumprimerlogo.png
+    \              Check Image Exist     /logo/en_scrumprimer.png
     translations   Check Text Exist      Scrum Primer Translations
     overview       Check Image Exist     /overview/overview.png
     anime          Check Image Exist     /overview/anime_scrum_overview_small.png

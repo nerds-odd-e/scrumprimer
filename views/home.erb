@@ -1,10 +1,10 @@
 <div class="tab-content">
-	<div class="tab-pane active" id="home">			
+	<div class="tab-pane active" id="home">
 		<div class="row-fluid">
 			<div class="span3"></div>
 			<div class="span6">
 				<div class="logo">
-					<img src="/scrumprimerlogo.png" alt="Scrum Primer"/>
+					<img src="<%= t.home.scrum_primer_logo_file %>" alt="<%= t.scrum_primer%>"/>
 				</div>			
 				<hr>
 			</div>
@@ -24,11 +24,13 @@
 				<a href="/primers/scrumprimer20_french.pdf"><%= t.home.scrum_primer_in_french %></a><br/>
 				<a href="/primers/scrumprimer20_simplified_chinese.pdf"><%= t.home.scrum_primer_in_simplified_chinese %></a><br/>
 				<a href="/primers/scrumprimer20_bulgarian.pdf"><%= t.home.scrum_primer_in_bulgarian %></a><br/>
-				
+				<br/>
 				<p><%= t.home.currently_in_progress %>:</p>
 				<ul>
-					<li><%= t["zh-CN"] %></li>
-					<li><%= t["jp"] %></li>
+					<% t.home.languages_in_progress.to_hash.each do |language_in_progress| %>
+					<li> <%= language_in_progress[1] %></li>
+					<% end %>
+					
 				</ul>
 			</div>
 		</div>

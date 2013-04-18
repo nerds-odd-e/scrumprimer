@@ -12,7 +12,7 @@ Feature: Viewer visits the Pages
    | "/"             | "Scrum Primer"                              |   
    | "/translations" | "Scrum Primer Translations"                 |
    | "/about"        | "Scrum Primer Creation"                     |
-   | "/contact"      | "Feedback"                                  |    
+   | "/contact"      | "Feedback and Contributions"                                  |    
 
  Scenario Outline: The Scrum Primer has the right images
   Given I am on the <URL>
@@ -20,6 +20,6 @@ Feature: Viewer visits the Pages
 
   Examples:
    | URL             | Image                                       |
-   | "/"             | "/scrumprimerlogo.png"                      |
+   | "/"             | "/logo/en_scrumprimer.png"                      |
    | "/overview"     | "/overview/overview.png"                    |
    | "/anime"        | "/overview/anime_scrum_overview_small.png"  |    
