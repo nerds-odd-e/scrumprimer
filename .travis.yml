@@ -4,8 +4,6 @@ before_install:
   - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
 
-language: ruby
-
 rvm:
   - 1.9.3
 
