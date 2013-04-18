@@ -4,6 +4,7 @@ require 'cucumber'
 require 'cucumber/rake/task'
 require 'rspec/core/rake_task'
 require "jshintrb/jshinttask"
+require 'link_checker'
 
 task :default => [:test_everything]
 
