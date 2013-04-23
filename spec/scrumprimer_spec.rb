@@ -73,5 +73,12 @@ describe "Scrum Primer Basic Specs" do
     page.should have_content "404"
     page.status_code.should == 404     
   end
+  
+  it "should have different title pages for each page" do
+    visit '/'
+    page.should have_title "Scrum Primer - Short Introduction"
+    visit '/translations'
+    page.should have_title "Scrum Primer - Translations"
+  end
 
 end

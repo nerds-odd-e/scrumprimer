@@ -10,6 +10,14 @@ bg: български
 
 scrum_primer: Scrum Primer
 
+page_titles:
+  home: Scrum Primer - Short Introduction to Scrum
+  translations: Scrum Primer - Translations
+  overview: Scrum Primer - Scrum Overview
+  anime: Scrum Primer - Scrum Anime Overview
+  about: About the Scrum Primer
+  contact: Contributing to Scrum Primer
+    
 main:
   navigation: 
     home: Home

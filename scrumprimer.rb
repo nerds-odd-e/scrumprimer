@@ -34,6 +34,17 @@ class ScrumPrimerApp < Sinatra::Application
     }
     menu_list
   end
+
+  def generate_main_page(locale, tab)
+    tab = tab || 'home'
+    R18n.set(locale) if locale
+
+    @page_title = t.page_titles[tab]
+
+    @menu_list = generate_menu_list(tab, locale)
+    @available_locales = generate_locales_link()
+    erb :"#{tab}"
+  end
   
   def redirect_to_public_file(file)
     send_file File.expand_path(file, settings.public_folder)
@@ -59,19 +70,12 @@ class ScrumPrimerApp < Sinatra::Application
     redirect_to_public_file('primers/zh-cn_scrumprimer20.pdf')
   end
   
-  get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|    
-    tab = tab || 'home'
-    @menu_list = generate_menu_list(tab)
-    @available_locales = generate_locales_link()
-    erb :"#{tab}"
+  get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|
+    generate_main_page(nil, tab)
   end
 
   get %r{^/(.*)/(home|translations|overview|anime|about|contact)?$} do |locale, tab|    
-    R18n.set(locale)
-    tab = tab || 'home'
-    @menu_list = generate_menu_list(tab, locale)
-    @available_locales = generate_locales_link()
-    erb :"#{tab}"
+    generate_main_page(locale, tab)
   end
   
   get '/*' do
