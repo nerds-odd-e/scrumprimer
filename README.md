@@ -1,6 +1,7 @@
 Scrum Primer
 ====================
 [![Build Status](https://travis-ci.org/basvodde/scrumprimer.png?branch=master)](https://travis-ci.org/basvodde/scrumprimer)
+"!https://codeclimate.com/github/basvodde/scrumprimer.png!":https://codeclimate.com/github/basvodde/scrumprimer
 
 Scrum Primer is a short introduction to Scrum written by Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde. This page contains the code of the http://www.scrumprimer.org website.
 
