@@ -46,33 +46,20 @@ class ScrumPrimerApp < Sinatra::Application
     erb :"#{tab}"
   end
 
-  def redirect_to_public_file(file)
-    send_file File.expand_path(file, settings.public_folder)
+  def self.redirect(url, redirect_to)
+    get url do
+      send_file File.expand_path(redirect_to, settings.public_folder)
+    end
   end
 
-  get '/primers/scrumprimer20_french.pdf' do
-    redirect_to_public_file('primers/fr_scrumprimer20.pdf')
-  end
-  
-  get '/scrumprimer20.pdf' do
-    redirect_to_public_file('primers/en_scrumprimer20.pdf')
-  end
-
-  get '/scrumprimer20_small.pdf' do
-    redirect_to_public_file('primers/en_scrumprimer20_small.pdf')
-  end
-
-  get '/scrumprimer120.pdf' do
-    redirect_to_public_file('primers/en_scrumprimer20_small.pdf')
-  end
-
-  get '/scrumprimer199.pdf' do
-    redirect_to_public_file('primers/en_scrumprimer20_small.pdf')
-  end
-
-  get '/scrum_primer_cn.pdf' do
-    redirect_to_public_file('primers/zh-cn_scrumprimer20.pdf')
-  end
+  redirect '/primers/scrumprimer20_french.pdf', 'primers/fr_scrumprimer20.pdf'
+  redirect '/primers/scrumprimer20_simplified_chinese.pdf', 'primers/zh-cn_scrumprimer20.pdf'
+  redirect '/primers/scrumprimer20_bulgarian.pdf', 'primers/bg_scrumprimer20.pdf'
+  redirect '/scrumprimer20.pdf', 'primers/en_scrumprimer20.pdf'
+  redirect '/scrumprimer20_small.pdf', 'primers/en_scrumprimer20_small.pdf'
+  redirect '/scrumprimer120.pdf', 'primers/en_scrumprimer20_small.pdf'
+  redirect '/scrumprimer199.pdf', 'primers/en_scrumprimer20_small.pdf'
+  redirect '/scrum_primer_cn.pdf', 'primers/zh-cn_scrumprimer20.pdf'
 
   get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|
     generate_main_page(nil, tab)

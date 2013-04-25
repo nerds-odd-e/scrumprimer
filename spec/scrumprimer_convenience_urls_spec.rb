@@ -52,6 +52,8 @@ describe "Convenience and backwards compatability URLS" do
   # For backward comparability!
   it "Can access urls that don't exist anymore, for backward compatability reasons (thanks to google to sharing them)" do
     link_should_work '/primers/scrumprimer20_french.pdf'
+    link_should_work '/primers/scrumprimer20_simplified_chinese.pdf'
+    link_should_work '/primers/scrumprimer20_bulgarian.pdf'
   end
   
 end
