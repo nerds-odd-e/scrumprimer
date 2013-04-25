@@ -84,10 +84,10 @@ describe "Link checking tests" do
     end    
   end
   
-  it "Validates the HTML" do
+  it "Validates the HTML", :integration => true do
     anemone_on_every_page("http://localhost:9292/") do |page|
-      unless page.html?
-
+      next unless page.html?
+      
       results = attempt_to('connect to w3c validator', 3) do
         W3CValidators::MarkupValidator.new.validate_text(page.body)
       end
@@ -101,5 +101,4 @@ describe "Link checking tests" do
       end
     end
   end
-    
 end

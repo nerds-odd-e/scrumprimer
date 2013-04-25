@@ -108,5 +108,5 @@ DEPENDENCIES
   rspec
   sinatra
   sinatra-r18n
-  xml-sitemap
   w3c_validators
+  xml-sitemap
