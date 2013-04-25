@@ -1,0 +1,9 @@
+*** Settings ***
+Resource	resource.txt
+Test Teardown	Close Browser
+
+*** Test Cases ***
+Should have a sitemap.xml file
+	${url}=	Catenate	SEPARATOR=	${BASE_URL}	/sitemap.xml
+	Open Browser	${url}
+	Page Should Contain	Hello, world
