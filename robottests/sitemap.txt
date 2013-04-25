@@ -6,4 +6,4 @@ Test Teardown	Close Browser
 Should have a sitemap.xml file
 	${url}=	Catenate	SEPARATOR=	${BASE_URL}	/sitemap.xml
 	Open Browser	${url}
-	Page Should Contain	Hello, world
+	Page Should Contain	http://scrumprimer.org/

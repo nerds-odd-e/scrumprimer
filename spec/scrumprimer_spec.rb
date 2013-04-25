@@ -84,6 +84,6 @@ describe "Scrum Primer Basic Specs" do
   it 'should have a sitemap.xml file' do
     visit '/sitemap.xml'
     page.status_code.should == 200
-    page.should have_content 'Hello, world'
+    page.should have_content 'http://scrumprimer.org/'
   end
 end

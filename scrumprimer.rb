@@ -1,6 +1,6 @@
-
 require 'sinatra'
 require 'sinatra/r18n'
+require 'xml-sitemap'
 
 class ScrumPrimerApp < Sinatra::Application
 
@@ -79,7 +79,11 @@ class ScrumPrimerApp < Sinatra::Application
   end
 
   get '/sitemap.xml' do
-    'Hello, world'
+    map = XmlSitemap::Map.new('scrumprimer.org') do
+    end
+
+    headers['Content-Type'] = 'text/xml'
+    map.render
   end
 
   get '/*' do
