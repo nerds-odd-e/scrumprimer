@@ -1,6 +1,8 @@
 # encoding: utf-8
 
 require 'anemone'
+require 'w3c_validators'
+require 'attempt_to'
 
 describe "Link checking tests" do
   
@@ -81,4 +83,23 @@ describe "Link checking tests" do
       end
     end    
   end
+  
+  it "Validates the HTML" do
+    anemone_on_every_page("http://localhost:9292/") do |page|
+      unless page.html?
+
+      results = attempt_to('connect to w3c validator', 3) do
+        W3CValidators::MarkupValidator.new.validate_text(page.body)
+      end
+      
+      # TBD also do the warnings. Now always have one warning which people say we can ignore a it is their problem ;P
+      #        (results.errors + results.warnings).each do |error|
+      results.errors.each do |error|
+        rspec_add_failure_message("At page #{page.url}") {
+          error.to_s.should== "none"
+        }
+      end
+    end
+  end
+    
 end

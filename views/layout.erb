@@ -39,7 +39,7 @@
 					</ul>
 					<hr>
 					<div id="translation_links">
-			          <ul id="translation_links">
+			          <ul>
                         <% @available_locales.each do |locale| %> 
                         <li><a href="/<%= locale.code.downcase %>/"><%= t[locale.code] %></a></li>	
                         <% end %>	                        
