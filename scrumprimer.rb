@@ -79,7 +79,12 @@ class ScrumPrimerApp < Sinatra::Application
   end
 
   get '/sitemap.xml' do
-    map = XmlSitemap::Map.new('scrumprimer.org') do
+    map = XmlSitemap::Map.new('scrumprimer.org') do |m|
+      m.add '/translations'
+      m.add '/overview'
+      m.add '/anime'
+      m.add '/about'
+      m.add '/contact'
     end
 
     headers['Content-Type'] = 'text/xml'
