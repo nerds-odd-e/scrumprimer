@@ -1,2 +1,4 @@
+Sitemap: http://scrumprimer.org/sitemap.xml
+
 User-agent: *
 Disallow:
