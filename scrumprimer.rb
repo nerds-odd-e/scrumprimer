@@ -50,6 +50,10 @@ class ScrumPrimerApp < Sinatra::Application
     send_file File.expand_path(file, settings.public_folder)
   end
 
+  get '/primers/scrumprimer20_french.pdf' do
+    redirect_to_public_file('primers/fr_scrumprimer20.pdf')
+  end
+  
   get '/scrumprimer20.pdf' do
     redirect_to_public_file('primers/en_scrumprimer20.pdf')
   end

@@ -43,5 +43,15 @@ describe "Convenience and backwards compatability URLS" do
     page.status_code.should == 200
     page.response_headers['Content-Type'].should== "application/pdf"    
   end
+
+  def link_should_work link
+    visit link
+    page.status_code.should == 200
+  end
+
+  # For backward comparability!
+  it "Can access urls that don't exist anymore, for backward compatability reasons (thanks to google to sharing them)" do
+    link_should_work '/primers/scrumprimer20_french.pdf'
+  end
   
 end
