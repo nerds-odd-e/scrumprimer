@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem "rake"
 gem "sinatra"
-gem "sinatra"
 gem "sinatra-r18n"
 gem "cucumber"
 gem "capybara"
