@@ -31,9 +31,11 @@ main:
 home:
     scrum_primer_logo_file: /logo/en_scrumprimer.png
     download_small_file: Download here - Small file
+    small_file: Small file
     download_print_quality_file: Download here - Print quality
     current_version: Current Version  
     translations: Translations
+    scrum_primer_in_german: Scrum Primer in German
     scrum_primer_in_french: Scrum Primer in French
     scrum_primer_in_simplified_chinese: Scrum Primer in Simplified Chinese
     scrum_primer_in_spanish: Scrum Primer in Spanish
