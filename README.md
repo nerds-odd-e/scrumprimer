@@ -45,6 +45,7 @@ Contributions
 For the Scrum Primer translation:
 * Chinese -> Terry Yin, Sun Yuan
 * Bulgarian
+* Japanese
 
 
 
