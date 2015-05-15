@@ -16,46 +16,46 @@ describe "Scrum Primer Basic Specs" do
 
   it "is able to get to the basic English page at the root" do
     visit '/'
-    page.all(:xpath, "id('home')")[0]["class"].should include("active")
-    page.all(:xpath, "id('mainTabs')/li[@id='navHome']")[0]["class"].should include("active")
-    page.should have_content "Current Version"
+    expect(page.all(:xpath, "id('home')")[0]["class"]).to include("active")
+    expect(page.all(:xpath, "id('mainTabs')/li[@id='navHome']")[0]["class"]).to include("active")
+    expect(page).to have_content "Current Version"
   end
 
   it "can click to the translation tab and the url changed" do
     visit '/'
     click_link "Translations"
 
-    page.should have_content "PDF versions of the Overview picture"
-    page.all(:xpath, "id('mainTabs')/li[@id='navTranslations']")[0]["class"].should include("active")
-    current_path.should== "/translations"
+    expect(page).to have_content "PDF versions of the Overview picture"
+    expect(page.all(:xpath, "id('mainTabs')/li[@id='navTranslations']")[0]["class"]).to include("active")
+           expect(current_path).to eq "/translations"
   end
 
   it "can click on the overview tab" do
     visit '/'
     click_link "Overview Picture"
-    page.should have_content "PDF versions of the Overview picture"
-    current_path.should== "/overview"
+    expect(page).to have_content "PDF versions of the Overview picture"
+    expect(current_path).to eq "/overview"
   end
 
   it "can click on the anime tab" do
     visit '/'
     click_link "Anime Overview"
-    page.should have_content "High-resolution versions of the overview:"
-    current_path.should== "/anime"
+    expect(page).to have_content "High-resolution versions of the overview:"
+    expect(current_path).to eq "/anime"
   end
 
   it "can click on the about tab" do
     visit '/'
     click_link "About"
-    page.should have_content "Scrum Primer Creation"
-    current_path.should== "/about"
+    expect(page).to have_content "Scrum Primer Creation"
+    expect(current_path).to eq "/about"
   end
 
   it "can click on the contact tab" do
     visit '/'
     click_link "Contact"
-    page.should have_content "Feedback"
-    current_path.should== "/contact"
+    expect(page).to have_content "Feedback"
+    expect(current_path).to eq "/contact"
   end
 
   it "has all pages with links to all available locales in the i18n directory" do
@@ -70,20 +70,20 @@ describe "Scrum Primer Basic Specs" do
 
   it "should go to the 404 page when going to an URL that doesn't exist" do
     visit '/doesntexist'
-    page.should have_content "404"
-    page.status_code.should == 404
+    expect(page).to have_content "404"
+    expect(page.status_code).to eq 404
   end
 
   it "should have different title pages for each page" do
     visit '/'
-    page.should have_title "Scrum Primer - Short Introduction"
+    expect(page).to have_title "Scrum Primer - Short Introduction"
     visit '/translations'
-    page.should have_title "Scrum Primer - Translations"
+    expect(page).to have_title "Scrum Primer - Translations"
   end
 
   it 'should have a sitemap.xml file' do
     visit '/sitemap.xml'
-    page.status_code.should == 200
-    page.should have_content 'http://scrumprimer.org/'
+    expect(page.status_code).to eq 200
+    expect(page).to have_content 'http://scrumprimer.org/'
   end
 end
