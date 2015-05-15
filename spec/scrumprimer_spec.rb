@@ -64,7 +64,7 @@ describe "Scrum Primer Basic Specs" do
     Dir.glob("./i18n/*.yml") {|file| locales << File.basename(file, ".*")}
 
     locales.each { |locale|
-      page.find("a[href='/#{locale}/']").should be_true
+      page.has_link? "/#{locale}/]"
     }
   end
 
