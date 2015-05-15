@@ -8,15 +8,15 @@ require 'link_checker'
 
 task :default => [:test_everything]
 
-task :test_everything do   
+task :test_everything do
    	Rake::Task['rspec'].invoke
-   	
+
    	Rake::Task['run_rackup_daemon'].invoke
-   	
+
    	begin
    	  Rake::Task['jasmine:ci'].invoke
    	  Rake::Task['integration'].invoke
-      Rake::Task['cucumber_tests'].invoke 
+      Rake::Task['cucumber_tests'].invoke
    	  Rake::Task['robot_tests'].invoke
    	  Rake::Task['check_external_links'].invoke
    	ensure
@@ -60,7 +60,7 @@ task :stop_rackup_daemon do
   sh "rm -f rackup.pid"
 end
 
-  
+
 begin
   require 'jasmine'
   load 'jasmine/tasks/jasmine.rake'
