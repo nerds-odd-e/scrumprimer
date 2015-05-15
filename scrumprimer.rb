@@ -37,7 +37,7 @@ class ScrumPrimerApp < Sinatra::Application
 
   def generate_main_page(locale, tab)
     tab = tab || 'home'
-    R18n.set(locale) if locale
+    R18n.thread_set(R18n::I18n.new(locale, R18n.default_places)) if locale
 
     @page_title = t.page_titles[tab]
 
