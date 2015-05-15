@@ -5,6 +5,7 @@ gem "sinatra"
 gem "sinatra-r18n"
 gem "cucumber"
 gem "capybara"
+gem 'selenium-webdriver'
 gem "rspec"
 gem 'jasmine'
 gem 'jshintrb'
