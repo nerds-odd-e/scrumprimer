@@ -17,9 +17,9 @@ page_titles:
   anime: Scrum Primer - Scrum Anime Overview
   about: About the Scrum Primer
   contact: Contributing to Scrum Primer
-    
+
 main:
-  navigation: 
+  navigation:
     home: Home
     translations: Translations
     overview: Overview Picture
@@ -33,13 +33,14 @@ home:
     download_small_file: Download here - Small file
     small_file: Small file
     download_print_quality_file: Download here - Print quality
-    current_version: Current Version  
+    current_version: Current Version
     translations: Translations
     scrum_primer_in_german: Scrum Primer in German
     scrum_primer_in_french: Scrum Primer in French
     scrum_primer_in_simplified_chinese: Scrum Primer in Simplified Chinese
     scrum_primer_in_spanish: Scrum Primer in Spanish
     scrum_primer_in_bulgarian: Scrum Primer in Bulgarian
+    scrum_primer_in_vietnamese: Scrum Primer in Vietnamese
     currently_in_progress: Currently In Progress
     languages_in_progress:
         japanese: Japanese
@@ -60,7 +61,7 @@ translations:
   bulgarian: Bulgarian
 
 overview:
-  scrum_primer_translations: Scrum Primer Translations  
+  scrum_primer_translations: Scrum Primer Translations
   scrum_overview_picture: Scrum Overview Picture
   overview_picture_pdf_versions: PDF versions of the Overview picture
   scrum_overview_v1: Scrum Overview Version 1
@@ -77,8 +78,8 @@ anime:
 
 about:
   scrum_primer_creation: Scrum Primer Creation
-  scrum_primer_creation_description_1: Scrum Primer was originally created by Pete Deemer and Gabrielle Benefield when they were both working in Yahoo! on their agile transition. When Craig Larman and Bas Vodde were working on their first Scaling Scrum book, they wanted to use a good introduction of Scrum as a reference but didn't want to write a new one. They joined forces with Pete and Gabrielle and all together rewrote the Scrum Primer. 
-  scrum_primer_creation_description_2: The Scrum Primer 2.0 version was created for InfoQ and for being more consistent with the latest descriptions of Scrum. 
+  scrum_primer_creation_description_1: Scrum Primer was originally created by Pete Deemer and Gabrielle Benefield when they were both working in Yahoo! on their agile transition. When Craig Larman and Bas Vodde were working on their first Scaling Scrum book, they wanted to use a good introduction of Scrum as a reference but didn't want to write a new one. They joined forces with Pete and Gabrielle and all together rewrote the Scrum Primer.
+  scrum_primer_creation_description_2: The Scrum Primer 2.0 version was created for InfoQ and for being more consistent with the latest descriptions of Scrum.
 
 contact:
   feedback_and_contributions: Feedback and Contributions
