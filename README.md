@@ -32,8 +32,8 @@ Testing Frameworks
 Also the site is used as an example of test technologies in order to compare them with each other. The current testing (and specification) frameworks used:
 
 * [RSpec](https://github.com/rspec/rspec)
-* [Jasmine](http://pivotal.github.io/jasmine/)
-* [Mocha](https://github.com/visionmedia/mocha) (TBD)
+* [Jasmine](https://jasmine.github.io/)
+* [Mocha](https://github.com/mochajs/mocha) (TBD)
 * [Cucumber](https://github.com/cucumber/cucumber)
 * [Robot Framework](http://code.google.com/p/robotframework/)
 
