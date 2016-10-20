@@ -94,7 +94,8 @@ describe "Link checking tests" do
       next unless page.html?
 
       results = attempt_to('connect to w3c validator', 3) do
-        W3CValidators::MarkupValidator.new.validate_text(page.body)
+        validator = W3CValidators::MarkupValidator.new(:validator_uri => 'http://validator.w3.org/nu/')
+        validator.validate_text(page.body)
       end
 
       # TBD also do the warnings. Now always have one warning which people say we can ignore a it is their problem ;P
