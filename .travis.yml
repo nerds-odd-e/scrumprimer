@@ -14,4 +14,3 @@ python:
 
 addons:
   - firefox: "49.0"
-
