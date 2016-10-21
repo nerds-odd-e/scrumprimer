@@ -12,3 +12,5 @@ rvm:
 python:
   - 2.7
 
+addons:
+  - firefox: "49.0"
