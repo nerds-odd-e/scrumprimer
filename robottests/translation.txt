@@ -29,6 +29,7 @@ Can switch to other language  [Arguments]  ${button}  ${language}
 Enter Translation
     Open Browser  ${BASE_URL}  ${BROWSER}
     Click Link  Translations
+    Wait Until Element Is Visible    overview_translated
 
 Confirm Translation Should Be  [Arguments]  ${language}
     Confirm Translation Is Shown  ${language}
