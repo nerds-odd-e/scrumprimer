@@ -42,7 +42,7 @@ working software until late in the game, causing a lack of transparency, lack of
 ability to improve, reduction in flexibility, and an increase in business and
 technical risks. 
 
-An alternative –- cross-functional teams with iterative development -- has also
+An alternative -- cross-functional teams with iterative development -- has also
 existed for decades, but was not as widely used as the traditional model.
 
 Scrum packages proven product-development concepts in a simple framework,
@@ -74,13 +74,14 @@ product at the end of the Sprint that is really “done”; in the case of softw
 this means a system that is integrated, fully tested, end-user documented, and
 potentially shippable. Key roles, artifacts, and events are summarized in Figure 1.
 
-Figure 1. Scrum Overview
+![*Figure 1. Scrum Overview*](figs/fig1_scrum_overview_en.png)
 
 A major theme in Scrum is "inspect and adapt." Since development inevitably
 involves learning, innovation, and surprises, Scrum emphasizes taking a short
 step of development, inspecting both the resulting product and the efficacy of
 current practices, and then adapting the product goals and process practices.
 *Repeat forever.*
+
 
 # Scrum Roles
 
@@ -197,11 +198,12 @@ attend the Scrum Alliance’s Certified ScrumMaster training.
 In addition to these three roles, there are other stakeholders who contribute to
 the success of the product, including managers, customers and end-users. Some
 stakeholders such as functional managers (for example, an engineering manager)
-may find their role, while still valuable, changes when adopting Scrum.
+may find their role, while still valuable, change when adopting Scrum.
 For example:
-    - they support the Team by respecting the rules and spirit of Scrum
-    - they help remove impediments that the Team and Product Owner identify
-    - they make their expertise and experience available
+
+- they support the Team by respecting the rules and spirit of Scrum
+- they help remove impediments that the Team and Product Owner identify
+- they make their expertise and experience available
 
 In Scrum, these individuals replace the time they previously spent playing the
 role of “nanny” (assigning tasks, getting status reports, and other forms of
@@ -226,9 +228,9 @@ ever, in order of priority”. Only a single Product Backlog exists for a produc
 this means the Product Owner is required to make prioritization decisions across
 the entire spectrum, representing the interests of stakeholders (including the Team).
 
-Figure 2. The Product Backlog
+![*Figure 2. The Product Backlog*](figs/fig2_the_product_backlog_en.png)
 
-Figure 3. Visual Management: Product Backlog items on the wall
+![*Figure 3. Visual Management: Product Backlog items on the wall*](figs/fig3_product_backlog_visual_mngm_en.png)
 
 The Product Backlog includes a variety of **items**, primarily new customer
 features (“enable all users to place book in shopping cart”), but also *major*
@@ -246,7 +248,7 @@ stories, use cases, or any other requirements approach that the group finds
 useful. But whatever the approach, most items should focus on delivering value
 to customers.
 
-A good Product Backlog is DEEP...
+A good Product Backlog is DEEP.
 
 **Detailed appropriately**. The top priority items are more fine-grained and
 detailed than the lower priority items, since the former will be worked on
@@ -451,7 +453,7 @@ tasks or, when the Product Backlog item are so small they would only take a
 couple hours to implement, simply the Product Backlog item. This list of work to
 be done during the Sprint is called the *Sprint Backlog* (Figure 4 and Figure 5).
 
-Figure 4. Example of one way to create a Sprint Backlog
+![*Figure 4. Example of one way to create a Sprint Backlog*](figs/fig4_example_of_sprint_backlog_en.png)
 
 At the end of the Sprint Planning Meeting, the Team sets a realistic target for
 what they believe they can deliver by the end of the Sprint. Traditionally, this
@@ -488,7 +490,7 @@ called a **Scrum Board**) where tasks (written on Post-It Notes) migrate during
 the Sprint across columns labeled “To Do,” “Work In Progress,” and “Done.”
 See Figure 5.
 
-Figure 5. Visual Management - Sprint Backlog tasks on the wall
+![*Figure 5. Visual Management - Sprint Backlog tasks on the wall*](figs/fig5_daily_scrum_color_en.jpg)
 
 One of the pillars of Scrum is that once the Team sets its target for the
 Sprint, any additions or changes must be deferred until the next Sprint. This
@@ -582,11 +584,11 @@ spreadsheet, many Teams find it is more effective to show it on paper on a wall
 in their workspace, with updates in pen; this “low-tech/high-touch” solution is
 fast, simple, and often more visible than a computer chart.
 
-Figure 6. Daily Updates of Work Remaining on the Sprint Backlog
+![*Figure 6. Daily Updates of Work Remaining on the Sprint Backlog*](figs/fig6_daily_updates_sprint_backlog_en.png)
 
-Figure 7. Sprint Burndown Chart 
+![*Figure 7. Sprint Burndown Chart*](figs/fig7_sprint_burndown_en.png)
 
-Figure 8. Visual Management: Hand-drawn Sprint Burndown Chart
+![*Figure 8. Visual Management: Hand-drawn Sprint Burndown Chart*](figs/fig8_hand_drawn_sprint_burndown_en.png)
 
 
 # Product Backlog Refinement
@@ -697,7 +699,7 @@ existing ones. The Product Owner is responsible for ensuring that these changes
 are reflected in the Product Backlog.See Figure 9 for an example of the updated
 Product Backlog.
 
-Figure 9. Updated Product Backlog 
+![*Figure 9. Updated Product Backlog*](figs/fig9_updated_product_backlog_en.png)
 
 There is no down time between Sprints -- Teams normally go from a Sprint
 Retrospective one afternoon into the next Sprint Planning the following morning
@@ -869,13 +871,22 @@ would like to point out some additional online material and a couple of books.
 
 Online material:
 
-- The Lean Primer - An introduction to Lean Thinking, an important influence to Scrum. <http://www.leanprimer.com>
-- The Distributed Scrum Primer - Additional tips for teams who aren’t co-located. <http://www.goodagile.com/distributedscrumprimer/>
-- The ScrumMaster Checklist - A list of question that good ScrumMasters use. <http://www.scrummasterchecklist.org/>
-- Feature Team Primer - Scaling Scrum with Feature Teams, <http://www.featureteams.org>
-- The Agile Atlas - Core Scrum. ScrumAlliance description of Scrum. <http://agileatlas.org/atlas/scrum>
-- Scrum Guide - Scrum.org description of Scrum. <http://www.scrum.org/Scrum-Guides>
-- Agile Contracts Primer - How to make Scrum-friendly contracts. <http://www.agilecontracts.org/>
+- The Lean Primer -- An introduction to Lean Thinking,
+  an important influence to Scrum.  
+  <http://www.leanprimer.com>.
+- The Distributed Scrum Primer -- Additional tips for teams who
+  aren’t co-located.  
+  <http://www.goodagile.com/distributedscrumprimer/>.
+- The ScrumMaster Checklist -- A list of question that good ScrumMasters use.  
+  <http://www.scrummasterchecklist.org/>.
+- Feature Team Primer -- Scaling Scrum with Feature Teams.  
+  <http://www.featureteams.org>.
+- The Agile Atlas -- Core Scrum. ScrumAlliance description of Scrum.  
+  <http://agileatlas.org/atlas/scrum>.
+- Scrum Guide -- Scrum.org description of Scrum.  
+  <http://www.scrum.org/Scrum-Guides>.
+- Agile Contracts Primer -- How to make Scrum-friendly contracts.  
+  <http://www.agilecontracts.org/>.
 
 Books:
 
