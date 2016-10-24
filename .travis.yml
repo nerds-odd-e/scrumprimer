@@ -1,3 +1,6 @@
+addons:
+  firefox: latest
+
 before_install:
   - gem update
   - gem install bundler
@@ -5,6 +8,11 @@ before_install:
   - sh -e /etc/init.d/xvfb start
   - sudo pip install robotframework==2.9.1
   - sudo pip install robotframework-selenium2library
+  - npm install geckodriver
+
+before_script:
+  - firefox --version
+  - echo $DISPLAY
 
 rvm:
   - 2.1
