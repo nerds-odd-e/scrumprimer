@@ -4,7 +4,8 @@ before_install:
   - gem install bundler
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - sudo pip install robotframework
+#  - sudo pip install robotframework
+  - sudo pip install robotframework==2.7.7
 #  - sudo pip install robotframework-selenium2library
   - sudo pip install robotframework-selenium2library==1.7.0
 
