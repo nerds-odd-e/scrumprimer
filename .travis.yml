@@ -1,3 +1,4 @@
+
 before_install:
   - gem update
   - gem install bundler
@@ -5,7 +6,10 @@ before_install:
   - sh -e /etc/init.d/xvfb start
   - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
+
+before_script:
   - firefox --version
+  - echo $DISPLAY
 
 rvm:
   - 2.1
