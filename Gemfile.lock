@@ -43,7 +43,7 @@ GEM
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
     execjs (2.7.0)
-    ffi (1.9.10)
+    ffi (1.9.14)
     gherkin (4.0.0)
     jasmine (2.4.0)
       jasmine-core (~> 2.4)
@@ -85,7 +85,7 @@ GEM
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
     rubyzip (1.2.0)
-    selenium-webdriver (2.53.1)
+    selenium-webdriver (2.53.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
@@ -120,11 +120,8 @@ DEPENDENCIES
   link-checker!
   rake
   rspec
-  selenium-webdriver
+  selenium-webdriver (= 2.53.0)
   sinatra
   sinatra-r18n
   w3c_validators
   xml-sitemap
-
-BUNDLED WITH
-   1.12.4
