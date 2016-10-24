@@ -6,7 +6,7 @@ before_install:
   - gem install bundler
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - sudo pip install robotframework==2.9.1
+  - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
   - npm install geckodriver
 
