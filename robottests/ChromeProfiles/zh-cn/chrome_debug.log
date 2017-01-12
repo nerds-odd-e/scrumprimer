@@ -1,7 +1,0 @@
-[83428:40451:0112/161551:WARNING:address_sorter_posix.cc(376)] FromSockAddr failed on netmask
-[83428:40451:0112/161551:WARNING:address_sorter_posix.cc(376)] FromSockAddr failed on netmask
-[83428:40451:0112/161551:WARNING:address_sorter_posix.cc(376)] FromSockAddr failed on netmask
-[83428:775:0112/161553:INFO:CONSOLE(6)] "SW registered", source: https://www.google.com.sg/_/chrome/newtab?rlz=1C5CHFA_enTH557TH557&espv=2&ie=UTF-8 (6)
-[83428:775:0112/161554:WARNING:pref_notifier_impl.cc(24)] Pref observer found at shutdown.
-[83428:775:0112/161554:WARNING:pref_notifier_impl.cc(24)] Pref observer found at shutdown.
-[83428:775:0112/161554:WARNING:pref_notifier_impl.cc(24)] Pref observer found at shutdown.
