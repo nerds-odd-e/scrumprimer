@@ -10,3 +10,5 @@ vendor
 link-checker-crawled-pages.pstore
 node_modules
 geckodriver.log
+*.pid
+robottests/ChromeProfiles/zh-cn/
