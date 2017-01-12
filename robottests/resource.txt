@@ -3,4 +3,4 @@ Library  Selenium2Library
 
 *** Variables ***
 ${BASE_URL}      http://localhost:9292/
-${BROWSER}       firefox
+${BROWSER}       gc
