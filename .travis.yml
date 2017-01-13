@@ -2,6 +2,10 @@ addons:
   - google-chrome-stable
 
 before_install:
+  - chrome --version
+  - wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip -d /usr/bin/
+  - echo $DISPLAY
   - gem update
   - gem install bundler
   - export DISPLAY=:99.0
@@ -9,9 +13,8 @@ before_install:
   - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
 
+
 before_script:
-  - firefox --version
-  - echo $DISPLAY
 
 rvm:
   - 2.1
