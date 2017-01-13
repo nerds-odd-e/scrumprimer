@@ -12,3 +12,4 @@ node_modules
 geckodriver.log
 *.pid
 robottests/ChromeProfiles/zh-cn/
+pyvenv/

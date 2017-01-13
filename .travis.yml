@@ -1,5 +1,5 @@
 addons:
-  firefox: latest
+  - google-chrome-stable
 
 before_install:
   - gem update
@@ -8,7 +8,6 @@ before_install:
   - sh -e /etc/init.d/xvfb start
   - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
-  - npm install geckodriver
 
 before_script:
   - firefox --version
