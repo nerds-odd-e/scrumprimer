@@ -19,6 +19,7 @@ before_install:
   - sh -e /etc/init.d/xvfb start
   - sudo pip install robotframework
   - sudo pip install robotframework-selenium2library
+  - ls robottests/ChromeProfiles/zh-cn/Default/
 
 
 before_script:
