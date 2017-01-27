@@ -8,7 +8,6 @@ Detect Default Language (English) Of Browser
     Page Language Should Be English
 
 Detect (Simplified) Chinese Language Of Browser
-    #Open Browser  ${BASE_URL}  ${BROWSER}  ff_profile_dir=robottests/FirefoxProfiles/zh-cn
     Open Chrome With Zh Locale  ${BASE_URL}
     Page Language Should Be Simplified Chinese
 
@@ -25,10 +24,5 @@ Open Chrome With Zh Locale
     [Documentation]     Starts the Google Chrome browser.
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method     ${options}     add_argument     --user-data-dir\=robottests/ChromeProfiles/zh-cn
-    #Call Method     ${options}     add_argument     --user-data-dir\=/dev/null
-    #Call Method     ${options}     add_argument     --incognito
-    #Call Method     ${options}     add_argument     --profile-directory\=robottests/ChromeProfiles/zh-cn/Default
-    #Call Method     ${options}     add_argument     --bwsi
-    #Call Method     ${options}     add_argument     --managed-user-id\=""
     Create WebDriver     Chrome     chrome_options=${options}
     Go To     ${url}
