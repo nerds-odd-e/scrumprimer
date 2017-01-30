@@ -1,18 +1,27 @@
+sudo: false
+dist: trusty
+
 addons:
-  firefox: latest
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 
 before_install:
+  - wget https://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip -d /tmp
+  - export PATH=$PATH:/tmp
   - gem update
   - gem install bundler
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - sudo pip install robotframework
-  - sudo pip install robotframework-selenium2library
-  - npm install geckodriver
+  - pip install robotframework
+  - pip install robotframework-selenium2library
 
 before_script:
-  - firefox --version
-  - echo $DISPLAY
+  - google-chrome --version
+  - ls robottests/ChromeProfiles/zh-cn/Default/
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 
 rvm:
   - 2.1

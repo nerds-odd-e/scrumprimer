@@ -1,7 +1,7 @@
 *** Settings ***
 Resource      resource.txt
 
-Test Setup    Open Browser    ${BASE_URL}
+Test Setup    Open Browser    ${BASE_URL}    ${BROWSER}
 Test Teardown    Close Browser
 
 *** Test Cases ***
