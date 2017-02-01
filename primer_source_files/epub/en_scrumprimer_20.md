@@ -1,9 +1,7 @@
 ---
 title: 
 - type: main
-  text: The Scrum Primer (V2.0)
-- type: subtitle
-  text: A Lightweight Guide to the Theory and Practice of Scrum
+  text: The Scrum Primer
 creator:
 - role: author
   text: Pete Demer
@@ -15,21 +13,26 @@ creator:
   text: Bas Vodde
 ...
 
+
+<center><b>A Lightweight Guide to the Theory and Practice of Scrum</b></center>
+<center>Version 2.0</center>
+
+
 A note to readers: There are many concise descriptions of Scrum available
 online, and this primer aims to provide the next level of detail on the
 practices. It is not intended as the final step in a Scrum education; teams that
 are considering adopting Scrum are advised to equip themselves with Ken
-Schwaber’s Agile Project Management with Scrum or, Mike Cohn’s Succeeding with
-Agile and take advantage of the many excellent Scrum training and coaching
-options that are available; full details are at scrumalliance.org. Our thanks go
-to Ken Schwaber, Dr. Jeff Sutherland, and Mike Cohn for their generous input.
+Schwaber’s [Agile Project Management with Scrum](https://www.amazon.com/Agile-Project-Management-Scrum-first/dp/B004PRXV28/)
+or, Mike Cohn’s [Succeeding with Agile](http://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364)
+and take advantage of the many excellent Scrum training and coaching
+options that are available; full details are at [scrumalliance.org](https://www.scrumalliance.org/).
+Our thanks go to Ken Schwaber, Dr. Jeff Sutherland, and Mike Cohn for their generous input.
 
 The latest version of the Primer can be found at:
 <http://www.infoq.com/minibooks/Scrum_Primer>.
 Translations can be found at: <http://www.scrumprimer.org/>.
 
 © 2012 Pete Deemer, Gabrielle Benefield, Craig Larman, Bas Vodde
-
 
 
 # Beyond Traditional Development
@@ -537,10 +540,11 @@ that happens every workday at an appointed time. Everyone on the Team attends.
 To keep it brief, it is recommended that everyone remain standing. It is the
 Team’s opportunity to synchronize their work and report to each other on
 obstacles. In the Daily Scrum, one by one, each member of the Team reports three
-things *to the other members of the Team*: (1)  What has been accomplished since
-the last meeting?; (2) What will be done before the next meeting?; and (3) What
-obstacles are in the way?. Note that the Daily Scrum is not a status meeting to
-report to a manager; it is a time for a self-organizing Team to share with each
+things *to the other members of the Team*: (1)&nbsp;What has been accomplished since
+the last meeting?; (2)&nbsp;What will be done before the next meeting?; and
+(3)&nbsp;What obstacles are in the way?.
+Note that the Daily Scrum is not a status meeting to report to a manager;
+it is a time for a self-organizing Team to share with each
 other what is going on, to help them coordinate. Someone makes note of the
 blocks, and the ScrumMaster is responsible to help Team members resolve them.
 There is little or no in-depth discussion during the Daily Scrum, the theme is
@@ -661,6 +665,7 @@ rather than a passive-session demo from the Team.
 Aim to spend no more than 30 minutes preparing for Sprint Review, otherwise it
 suggests something is wrong.
 
+
 # Sprint Retrospective
 
 **Summary**: Inspection and adaption related to the process and environment.  
@@ -679,8 +684,9 @@ approach is for ScrumMasters to facilitate each others’ retrospectives, which
 enables cross-pollination among Teams.
 
 There are many techniques for conducting a Sprint Retrospective, and the book
-*Agile Retrospectives* (Derby, Larsen 2006) provides a useful catalogue of
-techniques.  
+[Agile
+Retrospectives](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649)
+(Derby, Larsen 2006) provides a useful catalogue of techniques.
 
 Many teams hold retrospectives only focusing on *problems*, and that’s too bad. It
 can lead to people thinking of retrospectives as somewhat depressing or negative
@@ -690,6 +696,7 @@ detailed tips.
 
 Retrospectives that always use the same technique of analysis may become boring;
 therefore, introduce various techniques over time.
+
 
 # Starting the next Sprint
 
@@ -727,8 +734,8 @@ is not needed anymore.
 # Managing Releases
 
 A question that is sometimes asked is how, in an iterative model, can long-term
-release planning be done. There are two cases to consider: (1) a new product in
-its first release, and (2) an existing product in a later release.
+release planning be done. There are two cases to consider: (1)&nbsp;a new product
+in its first release, and (2)&nbsp;an existing product in a later release.
 
 In the case of a new product, or *an existing product just adopting Scrum*, there
 is the need to do initial Product Backlog refinement before the first Sprint,
@@ -881,8 +888,6 @@ Online material:
   <http://www.scrummasterchecklist.org/>.
 - Feature Team Primer -- Scaling Scrum with Feature Teams.  
   <http://www.featureteams.org>.
-- The Agile Atlas -- Core Scrum. ScrumAlliance description of Scrum.  
-  <http://agileatlas.org/atlas/scrum>.
 - Scrum Guide -- Scrum.org description of Scrum.  
   <http://www.scrum.org/Scrum-Guides>.
 - Agile Contracts Primer -- How to make Scrum-friendly contracts.  
