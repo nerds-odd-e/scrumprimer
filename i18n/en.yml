@@ -31,6 +31,7 @@ main:
 home:
     scrum_primer_logo_file: /logo/en_scrumprimer.png
     download_small_file: Download here - Small file
+    download_epub_en: Download here - Epub
     small_file: Small file
     download_print_quality_file: Download here - Print quality
     current_version: Current Version
