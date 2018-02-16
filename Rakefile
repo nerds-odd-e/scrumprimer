@@ -3,7 +3,6 @@ require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
 require 'rspec/core/rake_task'
-require "jshintrb/jshinttask"
 require 'link_checker'
 
 task :default => [:test_everything]
@@ -70,8 +69,9 @@ rescue LoadError
   end
 end
 
-Jshintrb::JshintTask.new :jshint do |t|
-  t.pattern = 'public/js/**/scrumprimer.js'
-  t.options = :defaults
-end
+# Deprecated. Needs to be replaced with another linter
+#Jshintrb::JshintTask.new :jshint do |t|
+  #t.pattern = 'public/js/**/scrumprimer.js'
+  #t.options = :defaults
+#end
 

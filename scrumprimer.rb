@@ -61,11 +61,11 @@ class ScrumPrimerApp < Sinatra::Application
   redirect '/scrumprimer199.pdf', 'primers/en_scrumprimer20_small.pdf'
   redirect '/scrum_primer_cn.pdf', 'primers/zh-cn_scrumprimer20.pdf'
 
-  get %r{^/(home|translations|overview|anime|about|contact)?$} do |tab|
+  get %r{/(home|translations|overview|anime|about|contact)?} do |tab|
     generate_main_page(nil, tab)
   end
 
-  get %r{^/(.*)/(home|translations|overview|anime|about|contact)?$} do |locale, tab|
+  get %r{/(.*)/(home|translations|overview|anime|about|contact)?} do |locale, tab|
     generate_main_page(locale, tab)
   end
 
