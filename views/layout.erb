@@ -5,19 +5,19 @@
 		<meta name="keywords" content="scrum, scrum primer, scrum overview, scrum introduction, scrum short, easy scrum, quick scrum, software scrum, agile project management, scrum project, scrum management, scrum project management"/>
 		<meta name="description" content="Scrum Primer is a short, readable and concrete introduction to the Scrum Framework by Pete Deemer, Gabrielle Benefied, Craig Larman, and Bas Vodde. It is an excellent guide for starting your Scrum journey." />
 
-	
+
 		<title><%= @page_title %></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href="/css/bootstrap.css" rel="stylesheet">
 		<link href="/css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="/css/scrumprimer.css" rel="stylesheet">
-				
+
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		
+
 		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="/ico/favicon.ico">
 		<link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-touch-icon-144.png">
@@ -40,9 +40,9 @@
 					<hr>
 					<div id="translation_links">
 			          <ul>
-                        <% @available_locales.each do |locale| %> 
-                        <li><a href="/<%= locale.code.downcase %>/"><%= t[locale.code] %></a></li>	
-                        <% end %>	                        
+                        <% @available_locales.each do |locale| %>
+                        <li><a href="/<%= locale.code.downcase %>/"><%= t[locale.code] %></a></li>
+                        <% end %>
                       </ul>
                     </div>
 				</div>
@@ -51,7 +51,7 @@
 			<div class="row-fluid">
 				<div class="span2"></div>
 				<div class="span8">
-					<hr>			
+					<hr>
 					<div id="github_contribution">
 						<%= t.main.github_contribution %>
 					</div>
@@ -59,14 +59,14 @@
 				</div>
 			</div>
 		</div>
-			
-       
+
+
     <!--     JavaScript -->
     <script src="/js/jquery.js"></script>
     <script src="/js/bootstrap-tab.js"></script>
     <script src="/js/bootstrap-button.js"></script>
     <script src="/js/scrumprimer.js"></script>
-    	
+
     <!--     Google Analytics -->
 	<script type="text/javascript">
 
