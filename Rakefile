@@ -34,7 +34,7 @@ RSpec::Core::RakeTask.new(:integration) do |t|
 end
 
 task :robot_tests do
-	sh "pybot -d robottests/output --noncritical 'developing' robottests"
+	sh "robot -d robottests/output --noncritical 'developing' robottests"
 end
 
 desc "run cucumber features"
