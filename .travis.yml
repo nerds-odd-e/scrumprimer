@@ -16,11 +16,8 @@ before_install:
   - export PATH=$HOME/.local/bin:$PATH:/tmp
   - gem update
   - gem install bundler
-  - pip --version
   - pip install --user --upgrade pip
   - pip install --user --upgrade urllib3
-  - pip --version
-  - pip freeze
   - pip install --user robotframework
   - pip install --user robotframework-selenium2library
 
