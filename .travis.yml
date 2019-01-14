@@ -14,8 +14,8 @@ before_install:
   - export PATH=$PATH:/tmp
   - gem update
   - gem install bundler
-  - pip install robotframework
-  - pip install robotframework-selenium2library
+  - pip install --user robotframework
+  - pip install --user robotframework-selenium2library
 
 before_script:
   - google-chrome --version
