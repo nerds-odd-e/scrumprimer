@@ -130,7 +130,7 @@ DEPENDENCIES
   jasmine
   jshintrb
   link-checker!
-  nokogiri (>= 1.10.4)
+  nokogiri
   puma
   rake
   rspec
