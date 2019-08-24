@@ -4,7 +4,7 @@ gem "rake"
 gem "sinatra"
 gem "sinatra-r18n"
 gem "cucumber"
-gem "nokogiri"
+gem "nokogiri", ">= 1.10.4"
 gem "puma"
 gem "capybara"
 gem 'selenium-webdriver'
@@ -15,6 +15,6 @@ gem 'w3c_validators'
 gem 'attempt_to'
 
 gem "certified" # This can probably be removed after the pull request to link-checker is merged
-gem "link-checker", :git => 'git://github.com/basvodde/link-checker'
+gem "link-checker", :git => 'https://github.com/basvodde/link-checker'
 
 gem 'xml-sitemap'

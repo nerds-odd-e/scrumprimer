@@ -1,13 +1,13 @@
 GIT
-  remote: git://github.com/basvodde/link-checker
-  revision: 498c6f3b13efc66dc27073a28b2da914b08583bb
+  remote: https://github.com/basvodde/link-checker
+  revision: 1bf33a22910ea5151f5a241e9683d19f15822401
   specs:
     link-checker (0.7.2)
-      anemone (~> 0.7.2)
-      certified (~> 0.1.1)
-      colorize (~> 0.5.8)
-      nokogiri (~> 1.8.1)
-      trollop (~> 2.0)
+      anemone
+      certified
+      colorize
+      nokogiri
+      trollop
 
 GEM
   remote: https://rubygems.org/
@@ -29,10 +29,10 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
-    certified (0.1.2)
+    certified (1.0.0)
     childprocess (1.0.1)
       rake (< 13.0)
-    colorize (0.5.8)
+    colorize (0.8.1)
     cucumber (3.1.2)
       builder (>= 2.1.2)
       cucumber-core (~> 3.2.0)
@@ -64,13 +64,13 @@ GEM
       rake
     json (2.2.0)
     mini_mime (1.0.2)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     multi_json (1.13.1)
     multi_test (0.1.2)
     mustermann (1.0.3)
     nio4r (2.4.0)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
     phantomjs (2.1.1.0)
     public_suffix (3.1.1)
     puma (4.1.0)
@@ -130,7 +130,7 @@ DEPENDENCIES
   jasmine
   jshintrb
   link-checker!
-  nokogiri
+  nokogiri (>= 1.10.4)
   puma
   rake
   rspec
