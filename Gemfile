@@ -4,7 +4,7 @@ gem "rake"
 gem "sinatra"
 gem "sinatra-r18n"
 gem "cucumber"
-gem 'nokogiri', '~>1.8.1'
+gem "nokogiri"
 gem "puma"
 gem "capybara"
 gem 'selenium-webdriver'
