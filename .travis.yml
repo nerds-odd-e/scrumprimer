@@ -1,8 +1,13 @@
 language: ruby
 cache: bundler
 
+services:
+  - xvfb
+
 addons:
   chrome: stable
+
+script: xvfb-run make test
 
 before_install:
   - wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
@@ -18,8 +23,6 @@ before_install:
 before_script:
   - google-chrome --version
   - ls robottests/ChromeProfiles/zh-cn/Default/
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
 
 rvm:
   - 2.6.3
