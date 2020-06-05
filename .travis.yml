@@ -7,7 +7,7 @@ services:
 addons:
   chrome: stable
 
-script: xvfb-run -e /dev/stdout "google-chrome --version"
+script: xvfb-run -a -e /dev/stdout "bundle exec rake"
 
 before_install:
   - wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
