@@ -1,5 +1,5 @@
+dist: bionic
 language: ruby
-cache: bundler
 
 services:
   - xvfb
