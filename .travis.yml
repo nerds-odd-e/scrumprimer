@@ -7,7 +7,11 @@ services:
 addons:
   chrome: stable
 
-script: xvfb-run -a -e /dev/stdout bundle exec rake
+script:
+  - pwd
+  - ls
+  - robot -d robottests/output --noncritical 'developing' robottests 
+  - xvfb-run -a -e /dev/stdout bundle exec rake
 
 before_install:
   - wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
