@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource  resource.txt
+Resource  resource.robot
 
 Test Teardown  Close Browser
 

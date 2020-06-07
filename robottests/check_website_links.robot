@@ -1,5 +1,5 @@
 *** Settings ***
-Resource      resource.txt
+Resource      resource.robot
 
 Test Setup    Open Browser    ${BASE_URL}    ${BROWSER}
 Test Teardown    Close Browser

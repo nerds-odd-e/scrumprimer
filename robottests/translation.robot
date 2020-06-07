@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource  resource.txt
+Resource  resource.robot
 
 Test Setup  Enter Translation
 Test TearDown  Close Browser
