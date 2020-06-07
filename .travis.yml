@@ -10,7 +10,8 @@ addons:
 script:
   - pwd
   - ls
-  - robot -d robottests/output --noncritical 'developing' robottests 
+  - robot --version
+  - robot -d robottests/output --noncritical 'developing' robottests
   - xvfb-run -a -e /dev/stdout bundle exec rake
 
 before_install:
