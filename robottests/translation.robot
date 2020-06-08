@@ -17,6 +17,7 @@ Checking All Language Images  [Template]  Can switch to other language
    German        de
    Spanish       es
    Bulgarian     bg
+   Russian       ru
 
 Default Translation Should be Chinese
     Confirm Translation Should Be  zh-cn

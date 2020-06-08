@@ -24,6 +24,7 @@ Feature: Translation Page
      | de                 | "German"      |
      | es                 | "Spanish"     |
      | bg                 | "Bulgarian"   |
+     | ru                 | "Russian"     |
 
 
         
