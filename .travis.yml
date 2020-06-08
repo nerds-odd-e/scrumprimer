@@ -10,8 +10,9 @@ addons:
 script: xvfb-run -a -e /dev/stdout bundle exec rake
 
 before_install:
-  - wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
-  - unzip chromedriver_linux64.zip -d /tmp
+  - LATEST_CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE"`
+  - curl "https://chromedriver.storage.googleapis.com/${LATEST_CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
+  - unzip chromedriver_linux64.zip -d ~/tmp
   - export PATH=$HOME/.local/bin:$PATH:/tmp
   - gem update
   - gem install bundler
