@@ -1,0 +1,92 @@
+en: English
+zh-CN: 简体中文
+jp: 日本語
+vi: Việt
+kr: 한국의
+fr: Français
+de: Deutsch
+es: Español
+bg: български
+ru: Русский
+
+scrum_primer: Азбука Скрама
+
+page_titles:
+  home: Азбука Скрама - Быстрое знакомство со Скрамом
+  translations: Азбука Скрама - Переводы
+  overview: Азбука Скрама - Обзор Скрама
+  anime: Азбука Скрама - Обзор Скрама в стиле Аниме
+  about: Об Азбуке Скрама
+  contact: Вклад в Азбуку Скрама
+
+main:
+  navigation:
+    home: Главная
+    translations: Перевод
+    overview: Обзорная иллюстрация
+    anime: Обзорная иллюстрация в стиле Аниме
+    about: О нас
+    contact: Контакты
+  github_contribution: Эта страница поставляется с открытым исходным кодом, приветствуется любой вклад в виде материалов, переводов или графики. Исходный код расположен по адресу <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
+
+home:
+    scrum_primer_logo_file: /logo/en_scrumprimer.png
+    download_small_file: Скачать - Сокращённая версия
+    download_epub_en: Скачать - Epub
+    small_file: Сокращённая версия
+    download_print_quality_file: Скачать - Версия для печати
+    current_version: Текущая версия
+    translations: Переводы
+    scrum_primer_in_german: Азбука Скрама на немецком
+    scrum_primer_in_french: Азбука Скрама на французком
+    scrum_primer_in_simplified_chinese: Азбука Скрама на китайском (упрощённом)
+    scrum_primer_in_traditional_chinese: Азбука Скрама на китайском (традиционном)
+    scrum_primer_in_spanish: Азбука Скрама на испанском
+    scrum_primer_in_bulgarian: Азбука Скрама на болгарском
+    scrum_primer_in_vietnamese: Азбука Скрама на вьетнамском
+    scrum_primer_in_italian: Азбука Скрама на итальянском
+    scrum_primer_in_korean: Азбука Скрама на корейском
+    currently_in_progress: В процессе перевода
+    languages_in_progress:
+        japanese: Японский
+        thai: Тайский
+        korean: Корейский
+        german: Немецкий
+        vietnamese: Вьетнамский
+
+translations:
+  simplified_chinese: Китайский
+  vietnamese: Вьетнамский
+  japanese: Японский
+  korean: Корейский
+  thai: Тайский
+  french: Французский
+  german: Немецкий
+  spanish: Испанский
+  bulgarian: Болгарский
+
+overview:
+  scrum_primer_translations: Переводы Азбуки Скрама
+  scrum_overview_picture: Обзорная иллюстрация Скрама
+  overview_picture_pdf_versions: PDF версия обзорная иллюстрации
+  scrum_overview_v1: Обзор Скрама Версия 1
+  scrum_overview_v2: Обзор Скрама Версия 2
+  feel_free_to_use: Не стесняйтесь использовать это в своих материалах.
+  work_is_licensed_under: Эта защищена лицензией
+
+anime:
+  scrum_overview_anime_version: Обзор Скрама - Аниме версия
+  scrum_overview_blue: Обзор Скрама - Голубой
+  scrum_overview_pink: Обзор Скрама - Розовый
+  scrum_overview_green: Обзор Скрама - Зелёный
+  high_resolution_versions: Версии с высоким разрешением
+
+about:
+  scrum_primer_creation: Создание Азбуки Скрама
+  scrum_primer_creation_description_1: Азбуки Скрама был первоначально создана Питом Димером и Габриелем Бенефилдо, когда они оба работали в Yahoo! над их Agile трансформацией. Когда Крейг Ларман и Бас Водде работали над своей первой книгой Scaling Scrum, они хотели использовать хорошее введение в Скрам в качестве справочного материала, но не хотели писать новую книгу. Они объединили свои усилия с Питом и Габриелем и все вместе переписали Азбуку Скрама.
+  scrum_primer_creation_description_2: Версия Азбука Скрама 2.0 была создана для InfoQ и более соответствует последним описаниям Скрама.
+
+contact:
+  feedback_and_contributions: Обратная связь и Внесение вклада
+  contact_and_contribute: <p>В настоящее время эту страницы в основном сопровождает Бас Водде, вы можете связаться с ним по электронной почте basv AT odd-e.com. </p><p>Вклад как в Азбуку, так и в этот сайт приветствуется. Вы можете найти больше информации по адресу <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
+
