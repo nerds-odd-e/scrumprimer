@@ -31,6 +31,8 @@ main:
 
 home:
     scrum_primer_logo_file: /logo/en_scrumprimer.png
+    visit: Visit
+    multi_team_scrum: for multi-team Scrum
     download_small_file: Download here - Small file
     download_epub_en: Download here - Epub
     small_file: Small file
