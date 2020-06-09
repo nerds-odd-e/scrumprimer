@@ -7,6 +7,7 @@ fr: Français
 de: Deutsch
 es: Español
 bg: български
+ru: Русский
 
 scrum_primer: Scrum Primer
 
@@ -63,6 +64,7 @@ translations:
   german: German
   spanish: Spanish
   bulgarian: Bulgarian
+  russian: Russian
 
 overview:
   scrum_primer_translations: Scrum Primer Translations
