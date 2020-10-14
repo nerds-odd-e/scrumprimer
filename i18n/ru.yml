@@ -33,9 +33,9 @@ home:
     scrum_primer_logo_file: /logo/en_scrumprimer.png
     visit: Посетите сайт
     multi_team_scrum: для получения информации о многокомандном Скраме
-    download_small_file: Скачать - Сокращённая версия
+    download_small_file: Скачать - Версия для чтения
     download_epub_en: Скачать - Epub
-    small_file: Сокращённая версия
+    small_file:  Версия для чтения
     download_print_quality_file: Скачать - Версия для печати
     current_version: Текущая версия
     translations: Переводы
@@ -48,6 +48,7 @@ home:
     scrum_primer_in_vietnamese: Азбука Скрама на вьетнамском
     scrum_primer_in_italian: Азбука Скрама на итальянском
     scrum_primer_in_korean: Азбука Скрама на корейском
+    scrum_primer_in_russian: Азбука Скрама на русском
     currently_in_progress: В процессе перевода
     languages_in_progress:
         japanese: Японский

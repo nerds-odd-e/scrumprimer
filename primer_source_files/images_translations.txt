@@ -209,3 +209,24 @@ Potentialy shipable product increment - Potenziell auslieferbares Produktinkreme
 Sprint review - Sprint Review
 Retrospective - Retrospective
 Scrum Primer - Scrum Primer
+
+------------------------------------------------------------------------------
+
+Russian:
+
+Scrum Master - Скрам-мастер
+Product Owner - Владелец Продукта
+Team - Команда
+Items - Элементы
+Product Backlog - Бэклог Продукта
+Sprint Planning part 1 and 2 - Планирование Спринта Часть 1 и 2
+Sprint Backlog - Бэклог Спринта
+Work - Работа
+Daily Scrum - Ежедневный Скрам
+One to four weeks - От одной до четырёх недель
+No change to goal - Нет изменений цели
+Product Backlog refinement - Уточнение Бэклога Продукта
+Potentialy shipable product increment - Потенциально Готовый к Поставке Инкремент Продукта
+Sprint review - Обзор Спринта
+Retrospective - Ретроспектива
+Scrum Primer - Азбука Скрама
