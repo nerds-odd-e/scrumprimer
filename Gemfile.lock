@@ -70,7 +70,7 @@ GEM
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
-    nokogiri (1.13.9)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     phantomjs (2.1.1.0)
@@ -78,7 +78,7 @@ GEM
     puma (4.3.12)
       nio4r (~> 2.0)
     r18n-core (3.2.0)
-    racc (1.6.0)
+    racc (1.6.1)
     rack (2.2.4)
     rack-protection (2.2.3)
       rack
