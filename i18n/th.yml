@@ -68,3 +68,7 @@ about:
   scrum_primer_creation: ที่มาของ Scrum Primer
   scrum_primer_creation_description_1: เดิมที Scrum Primer ถูกสร้างโดย Pete Deemer และ Gabrielle Benefield สมัยที่ทั้งสองผลักดันการเปลี่ยนผ่านวิธีการทำงานที่ Yahoo สู่ Agile ขณะเดียวกัน Craig Larman และ Bas Vodde ที่กำลังเขียนหนังสือ Scaling Scrum เล่มแรก ทาง Craig และ Bas ต้องการคำนำเด็ดๆเกี่ยวกับ scrum เพื่อใช้เป็นแหล่งอ้างอิงในหนังสือ แต่ทั้งคู่ไม่อยากเขียนเองใหม่ ทั้งสี่คนจึงได้มาเจอกัน(Pete, Gabrielle, Craig, Bas) เพื่อนิยาม Scrum Primer ใหม่ด้วยกัน
   scrum_primer_creation_description_2: Scrum Primer เวอร์ชัน 2.0 ถูกสร้างเพื่อ InfoQ และเพื่อให้สอดคล้องกับนิยามล่าสุดของ Scrum
+
+contact:
+  feedback_and_contributions: ข้อเสนอแนะและการมีส่วนร่วม
+  contact_and_contribute: <p>ในขณะนี้ผู้ดูแลหลักของหน้าเวบไซด์นี้คือ Bas Vodde ซึ่งสามารถติดต่อได้ที่ basv AT odd-e.com. </p><p>เรายินดีเป็นอย่างยิ่งสำหรับทุกการมีส่วนช่วยทั้งในส่วน the primer และหน้าเวบไซด์นี้ สำหรับข้อมูลเพิ่มเติมสามารถดูได้ที่ <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
