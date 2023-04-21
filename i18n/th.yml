@@ -1,0 +1,37 @@
+main:
+  navigation:
+    home: หน้าหลัก
+    translations: ฉบับแปล
+    overview: ภาพรวม
+    anime: ภาพรวม(เวอร์ชันอนิเมะ)
+    about: เกี่ยวกับ
+    contact: ติดต่อ
+  github_contribution: หน้าเวบไซด์นี้เปิดให้ทุกคนสามารถเป็นส่วนหนึ่งในการพัฒนา ไม่ว่าจะเป็นส่วนเนื้อหา การแปลภาษา รวมถึงภาพประกอบ ทางผู้สร้างยินดีเป็นอย่างยิ่ง สำหรับผู้ที่สนใจสามารถดูโปรเจคได้ที่ <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
+
+home:
+  scrum_primer_logo_file: /logo/en_scrumprimer.png
+  visit: เยี่ยมชม
+  multi_team_scrum: สำหรับการทำสกรัมแบบมากกว่าหนึ่งทีม
+  download_small_file: ดาวน์โหลดได้ที่นี่ - ฉบับไฟล์เล็ก
+  download_epub_en: ดาวน์โหลดได้ที่นี่ - ฉบับ Epub
+  small_file: ไฟล์ขนาดเล็ก
+  download_print_quality_file: ดาวน์โหลดได้ที่นี่ - ฉบับพิมพ์รายละเอียดสูง
+  current_version: ฉบับล่าสุด
+  translations: ฉบับแปล
+  scrum_primer_in_german: Scrum Primer ฉบับภาษาเยอรมัน
+  scrum_primer_in_french: Scrum Primer ฉบับภาษาฝรั่งเศส
+  scrum_primer_in_simplified_chinese: Scrum Primer ฉบับภาษาจีนกลาง
+  scrum_primer_in_traditional_chinese: Scrum Primer ฉบับภาษาจีนดั้งเดิม(ไต้หวัน ฮ่องกง หรือในคนจีนโพ้นทะเล)
+  scrum_primer_in_spanish: Scrum Primer ฉบับภาษาสเปน
+  scrum_primer_in_bulgarian: Scrum Primer in Bulgarian
+  scrum_primer_in_vietnamese: Scrum Primer in Vietnamese
+  scrum_primer_in_italian: Scrum Primer in Italian
+  scrum_primer_in_korean: Scrum Primer in Korean
+  scrum_primer_in_russian: Scrum Primer in Russian
+  currently_in_progress: Currently In Progress
+  languages_in_progress:
+    japanese: Japanese
+    thai: Thai
+    korean: Korean
+    german: German
+    vietnamese: Vietnamese
