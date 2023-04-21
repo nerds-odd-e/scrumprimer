@@ -63,3 +63,8 @@ anime:
   scrum_overview_pink: ภาพรวมของ Scrum - ธีมสีชมพู
   scrum_overview_green: ภาพรวมของ Scrum - ธีมสีเขียว
   high_resolution_versions: ภาพรวมฉบับภาพรายละเอียดสูง
+
+about:
+  scrum_primer_creation: ที่มาของ Scrum Primer
+  scrum_primer_creation_description_1: เดิมที Scrum Primer ถูกสร้างโดย Pete Deemer และ Gabrielle Benefield สมัยที่ทั้งสองผลักดันการเปลี่ยนผ่านวิธีการทำงานที่ Yahoo สู่ Agile ขณะเดียวกัน Craig Larman และ Bas Vodde ที่กำลังเขียนหนังสือ Scaling Scrum เล่มแรก ทาง Craig และ Bas ต้องการคำนำเด็ดๆเกี่ยวกับ scrum เพื่อใช้เป็นแหล่งอ้างอิงในหนังสือ แต่ทั้งคู่ไม่อยากเขียนเองใหม่ ทั้งสี่คนจึงได้มาเจอกัน(Pete, Gabrielle, Craig, Bas) เพื่อนิยาม Scrum Primer ใหม่ด้วยกัน
+  scrum_primer_creation_description_2: Scrum Primer เวอร์ชัน 2.0 ถูกสร้างเพื่อ InfoQ และเพื่อให้สอดคล้องกับนิยามล่าสุดของ Scrum
