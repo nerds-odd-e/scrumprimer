@@ -31,32 +31,32 @@ main:
   github_contribution: หน้าเวบไซด์นี้เปิดให้ทุกคนสามารถเป็นส่วนหนึ่งในการพัฒนา ไม่ว่าจะเป็นส่วนเนื้อหา การแปลภาษา รวมถึงภาพประกอบ ทางผู้สร้างยินดีเป็นอย่างยิ่ง สำหรับผู้ที่สนใจสามารถดูโปรเจคได้ที่ <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
 
 home:
-  scrum_primer_logo_file: /logo/en_scrumprimer.png
-  visit: เยี่ยมชม
-  multi_team_scrum: สำหรับการทำสกรัมแบบมากกว่าหนึ่งทีม
-  download_small_file: ดาวน์โหลดได้ที่นี่ - ฉบับไฟล์เล็ก
-  download_epub_en: ดาวน์โหลดได้ที่นี่ - ฉบับ Epub
-  small_file: ไฟล์ขนาดเล็ก
-  download_print_quality_file: ดาวน์โหลดได้ที่นี่ - ฉบับพิมพ์รายละเอียดสูง
-  current_version: ฉบับล่าสุด
-  translations: ฉบับแปลภาษาต่างๆ
-  scrum_primer_in_german: Scrum Primer ฉบับภาษาเยอรมัน
-  scrum_primer_in_french: Scrum Primer ฉบับภาษาฝรั่งเศส
-  scrum_primer_in_simplified_chinese: Scrum Primer ฉบับภาษาจีนกลาง
-  scrum_primer_in_traditional_chinese: Scrum Primer ฉบับภาษาจีนดั้งเดิม(ไต้หวัน ฮ่องกง หรือในคนจีนโพ้นทะเล)
-  scrum_primer_in_spanish: Scrum Primer ฉบับภาษาสเปน
-  scrum_primer_in_bulgarian: Scrum Primer ฉบับภาษาบัลแกเรีย
-  scrum_primer_in_vietnamese: Scrum Primer ฉบับภาษาเวียดนาม
-  scrum_primer_in_italian: Scrum Primer ฉบับภาษาอิตาเลียน
-  scrum_primer_in_korean: Scrum Primer ฉบับภาษาเกาหลี
-  scrum_primer_in_russian: Scrum Primer ฉบับภาษารัฐเซีย
-  currently_in_progress: อยู่ระหว่างการดำเนินการ
-  languages_in_progress:
-    japanese: ภาษาญี่ปุ่่น
-    thai: ภาษาไทย
-    korean: ภาษาเกาหลี
-    german: ภาษาเยอรมัน
-    vietnamese: ภาษาเวียดนาม
+    scrum_primer_logo_file: /logo/en_scrumprimer.png
+    visit: เยี่ยมชม
+    multi_team_scrum: สำหรับการทำสกรัมแบบมากกว่าหนึ่งทีม
+    download_small_file: ดาวน์โหลดได้ที่นี่ - ฉบับไฟล์เล็ก
+    download_epub_en: ดาวน์โหลดได้ที่นี่ - ฉบับ Epub
+    small_file: ไฟล์ขนาดเล็ก
+    download_print_quality_file: ดาวน์โหลดได้ที่นี่ - ฉบับพิมพ์รายละเอียดสูง
+    current_version: ฉบับล่าสุด
+    translations: ฉบับแปลภาษาต่างๆ
+    scrum_primer_in_german: Scrum Primer ฉบับภาษาเยอรมัน
+    scrum_primer_in_french: Scrum Primer ฉบับภาษาฝรั่งเศส
+    scrum_primer_in_simplified_chinese: Scrum Primer ฉบับภาษาจีนกลาง
+    scrum_primer_in_traditional_chinese: Scrum Primer ฉบับภาษาจีนดั้งเดิม(ไต้หวัน ฮ่องกง หรือในคนจีนโพ้นทะเล)
+    scrum_primer_in_spanish: Scrum Primer ฉบับภาษาสเปน
+    scrum_primer_in_bulgarian: Scrum Primer ฉบับภาษาบัลแกเรีย
+    scrum_primer_in_vietnamese: Scrum Primer ฉบับภาษาเวียดนาม
+    scrum_primer_in_italian: Scrum Primer ฉบับภาษาอิตาเลียน
+    scrum_primer_in_korean: Scrum Primer ฉบับภาษาเกาหลี
+    scrum_primer_in_russian: Scrum Primer ฉบับภาษารัฐเซีย
+    currently_in_progress: อยู่ระหว่างการดำเนินการ
+    languages_in_progress:
+        japanese: ภาษาญี่ปุ่่น
+        thai: ภาษาไทย
+        korean: ภาษาเกาหลี
+        german: ภาษาเยอรมัน
+        vietnamese: ภาษาเวียดนาม
 
 translations:
   simplified_chinese: ภาษาจีน
