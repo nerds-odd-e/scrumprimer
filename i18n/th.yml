@@ -1,3 +1,25 @@
+en: English
+zh-CN: 简体中文
+jp: 日本語
+vi: Việt
+kr: 한국의
+fr: Français
+de: Deutsch
+es: Español
+bg: български
+ru: Русский
+th: ภาษาไทย
+
+scrum_primer: Scrum Primer
+
+page_titles:
+  home: Scrum Primer - แนะนำ Scrum เบื้องต้น
+  translations: Scrum Primer - ฉบับแปล
+  overview: Scrum Primer - ภาพรวม Scrum
+  anime: Scrum Primer - ภาพรวม(เวอร์ชันอนิเมะ)
+  about: เกี่ยวกับ Scrum Primer
+  contact: มาเป็นส่วนหนึ่งในการพัฒนา Scrum Primer
+
 main:
   navigation:
     home: หน้าหลัก
@@ -71,4 +93,4 @@ about:
 
 contact:
   feedback_and_contributions: ข้อเสนอแนะและการมีส่วนร่วม
-  contact_and_contribute: <p>ในขณะนี้ผู้ดูแลหลักของหน้าเวบไซด์นี้คือ Bas Vodde ซึ่งสามารถติดต่อได้ที่ basv AT odd-e.com. </p><p>เรายินดีเป็นอย่างยิ่งสำหรับทุกการมีส่วนช่วยทั้งในส่วน the primer และหน้าเวบไซด์นี้ สำหรับข้อมูลเพิ่มเติมสามารถดูได้ที่ <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
+  contact_and_contribute: <p>ในขณะนี้ผู้ดูแลหลักของหน้าเวบไซด์นี้คือ Bas Vodde ซึ่งสามารถติดต่อได้ที่ basv AT odd-e.com. </p><p>เรายินดีเป็นอย่างยิ่งสำหรับทุกการมีส่วนร่วมใน the primer และหน้าเวบไซด์นี้ สำหรับข้อมูลเพิ่มเติมสามารถดูได้ที่ <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>

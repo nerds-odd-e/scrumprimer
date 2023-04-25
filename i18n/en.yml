@@ -8,6 +8,7 @@ de: Deutsch
 es: Español
 bg: български
 ru: Русский
+th: ภาษาไทย
 
 scrum_primer: Scrum Primer
 
@@ -30,32 +31,32 @@ main:
   github_contribution: This page is open source and contributions in either content, language, or graphics are welcome. The source is at <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
 
 home:
-    scrum_primer_logo_file: /logo/en_scrumprimer.png
-    visit: Visit
-    multi_team_scrum: for multi-team Scrum
-    download_small_file: Download here - Small file
-    download_epub_en: Download here - Epub
-    small_file: Small file
-    download_print_quality_file: Download here - Print quality
-    current_version: Current Version
-    translations: Translations
-    scrum_primer_in_german: Scrum Primer in German
-    scrum_primer_in_french: Scrum Primer in French
-    scrum_primer_in_simplified_chinese: Scrum Primer in Simplified Chinese
-    scrum_primer_in_traditional_chinese: Scrum Primer in Traditional Chinese
-    scrum_primer_in_spanish: Scrum Primer in Spanish
-    scrum_primer_in_bulgarian: Scrum Primer in Bulgarian
-    scrum_primer_in_vietnamese: Scrum Primer in Vietnamese
-    scrum_primer_in_italian: Scrum Primer in Italian
-    scrum_primer_in_korean: Scrum Primer in Korean
-    scrum_primer_in_russian: Scrum Primer in Russian
-    currently_in_progress: Currently In Progress
-    languages_in_progress:
-        japanese: Japanese
-        thai: Thai
-        korean: Korean
-        german: German
-        vietnamese: Vietnamese
+  scrum_primer_logo_file: /logo/en_scrumprimer.png
+  visit: Visit
+  multi_team_scrum: for multi-team Scrum
+  download_small_file: Download here - Small file
+  download_epub_en: Download here - Epub
+  small_file: Small file
+  download_print_quality_file: Download here - Print quality
+  current_version: Current Version
+  translations: Translations
+  scrum_primer_in_german: Scrum Primer in German
+  scrum_primer_in_french: Scrum Primer in French
+  scrum_primer_in_simplified_chinese: Scrum Primer in Simplified Chinese
+  scrum_primer_in_traditional_chinese: Scrum Primer in Traditional Chinese
+  scrum_primer_in_spanish: Scrum Primer in Spanish
+  scrum_primer_in_bulgarian: Scrum Primer in Bulgarian
+  scrum_primer_in_vietnamese: Scrum Primer in Vietnamese
+  scrum_primer_in_italian: Scrum Primer in Italian
+  scrum_primer_in_korean: Scrum Primer in Korean
+  scrum_primer_in_russian: Scrum Primer in Russian
+  currently_in_progress: Currently In Progress
+  languages_in_progress:
+    japanese: Japanese
+    thai: Thai
+    korean: Korean
+    german: German
+    vietnamese: Vietnamese
 
 translations:
   simplified_chinese: Chinese
@@ -93,4 +94,3 @@ about:
 contact:
   feedback_and_contributions: Feedback and Contributions
   contact_and_contribute: <p>Currently, the main maintainer of this page is Bas Vodde and you can contact him at basv AT odd-e.com. </p><p>Contributions to both the primer and this page are more than welcome. You can find more information at the <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
-
