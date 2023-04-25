@@ -31,32 +31,32 @@ main:
   github_contribution: Эта страница поставляется с открытым исходным кодом, приветствуется любой вклад в виде материалов, переводов или графики. Исходный код расположен по адресу <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
 
 home:
-  scrum_primer_logo_file: /logo/en_scrumprimer.png
-  visit: Посетите сайт
-  multi_team_scrum: для получения информации о многокомандном Скраме
-  download_small_file: Скачать - Версия для чтения
-  download_epub_en: Скачать - Epub
-  small_file: Версия для чтения
-  download_print_quality_file: Скачать - Версия для печати
-  current_version: Текущая версия
-  translations: Переводы
-  scrum_primer_in_german: Азбука Скрама на немецком
-  scrum_primer_in_french: Азбука Скрама на французком
-  scrum_primer_in_simplified_chinese: Азбука Скрама на китайском (упрощённом)
-  scrum_primer_in_traditional_chinese: Азбука Скрама на китайском (традиционном)
-  scrum_primer_in_spanish: Азбука Скрама на испанском
-  scrum_primer_in_bulgarian: Азбука Скрама на болгарском
-  scrum_primer_in_vietnamese: Азбука Скрама на вьетнамском
-  scrum_primer_in_italian: Азбука Скрама на итальянском
-  scrum_primer_in_korean: Азбука Скрама на корейском
-  scrum_primer_in_russian: Азбука Скрама на русском
-  currently_in_progress: В процессе перевода
-  languages_in_progress:
-    japanese: Японский
-    thai: Тайский
-    korean: Корейский
-    german: Немецкий
-    vietnamese: Вьетнамский
+    scrum_primer_logo_file: /logo/en_scrumprimer.png
+    visit: Посетите сайт
+    multi_team_scrum: для получения информации о многокомандном Скраме
+    download_small_file: Скачать - Версия для чтения
+    download_epub_en: Скачать - Epub
+    small_file:  Версия для чтения
+    download_print_quality_file: Скачать - Версия для печати
+    current_version: Текущая версия
+    translations: Переводы
+    scrum_primer_in_german: Азбука Скрама на немецком
+    scrum_primer_in_french: Азбука Скрама на французком
+    scrum_primer_in_simplified_chinese: Азбука Скрама на китайском (упрощённом)
+    scrum_primer_in_traditional_chinese: Азбука Скрама на китайском (традиционном)
+    scrum_primer_in_spanish: Азбука Скрама на испанском
+    scrum_primer_in_bulgarian: Азбука Скрама на болгарском
+    scrum_primer_in_vietnamese: Азбука Скрама на вьетнамском
+    scrum_primer_in_italian: Азбука Скрама на итальянском
+    scrum_primer_in_korean: Азбука Скрама на корейском
+    scrum_primer_in_russian: Азбука Скрама на русском
+    currently_in_progress: В процессе перевода
+    languages_in_progress:
+        japanese: Японский
+        thai: Тайский
+        korean: Корейский
+        german: Немецкий
+        vietnamese: Вьетнамский
 
 translations:
   simplified_chinese: Китайский
