@@ -8,6 +8,7 @@ de: Deutsch
 es: Español
 bg: български
 ru: Русский
+th: ภาษาไทย
 
 scrum_primer: Азбука Скрама
 
@@ -93,4 +94,3 @@ about:
 contact:
   feedback_and_contributions: Обратная связь и Внесение вклада
   contact_and_contribute: <p>В настоящее время этот сайт в основном сопровождает Бас Водди, вы можете связаться с ним по электронной почте basv AT odd-e.com. </p><p>Вклад как в Азбуку, так и в этот сайт приветствуется. Вы можете найти больше информации по адресу <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
-

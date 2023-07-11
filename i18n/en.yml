@@ -8,6 +8,7 @@ de: Deutsch
 es: Español
 bg: български
 ru: Русский
+th: ภาษาไทย
 
 scrum_primer: Scrum Primer
 
@@ -93,4 +94,3 @@ about:
 contact:
   feedback_and_contributions: Feedback and Contributions
   contact_and_contribute: <p>Currently, the main maintainer of this page is Bas Vodde and you can contact him at basv AT odd-e.com. </p><p>Contributions to both the primer and this page are more than welcome. You can find more information at the <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
-

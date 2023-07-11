@@ -1,0 +1,96 @@
+en: English
+zh-CN: 简体中文
+jp: 日本語
+vi: Việt
+kr: 한국의
+fr: Français
+de: Deutsch
+es: Español
+bg: български
+ru: Русский
+th: ภาษาไทย
+
+scrum_primer: Scrum Primer
+
+page_titles:
+  home: Scrum Primer - แนะนำ Scrum เบื้องต้น
+  translations: Scrum Primer - ฉบับแปล
+  overview: Scrum Primer - ภาพรวม Scrum
+  anime: Scrum Primer - ภาพรวม(เวอร์ชันอนิเมะ)
+  about: เกี่ยวกับ Scrum Primer
+  contact: มาเป็นส่วนหนึ่งในการพัฒนา Scrum Primer
+
+main:
+  navigation:
+    home: หน้าหลัก
+    translations: ฉบับแปล
+    overview: ภาพรวม
+    anime: ภาพรวม(เวอร์ชันอนิเมะ)
+    about: เกี่ยวกับ
+    contact: ติดต่อ
+  github_contribution: หน้าเวบไซด์นี้เปิดให้ทุกคนสามารถเป็นส่วนหนึ่งในการพัฒนา ไม่ว่าจะเป็นส่วนเนื้อหา การแปลภาษา รวมถึงภาพประกอบ ทางผู้สร้างยินดีเป็นอย่างยิ่ง สำหรับผู้ที่สนใจสามารถดูโปรเจคได้ที่ <a href="https://github.com/basvodde/scrumprimer">github scrumprimer</a>
+
+home:
+    scrum_primer_logo_file: /logo/en_scrumprimer.png
+    visit: เยี่ยมชม
+    multi_team_scrum: สำหรับการทำสกรัมแบบมากกว่าหนึ่งทีม
+    download_small_file: ดาวน์โหลดได้ที่นี่ - ฉบับไฟล์เล็ก
+    download_epub_en: ดาวน์โหลดได้ที่นี่ - ฉบับ Epub
+    small_file: ไฟล์ขนาดเล็ก
+    download_print_quality_file: ดาวน์โหลดได้ที่นี่ - ฉบับพิมพ์รายละเอียดสูง
+    current_version: ฉบับล่าสุด
+    translations: ฉบับแปลภาษาต่างๆ
+    scrum_primer_in_german: Scrum Primer ฉบับภาษาเยอรมัน
+    scrum_primer_in_french: Scrum Primer ฉบับภาษาฝรั่งเศส
+    scrum_primer_in_simplified_chinese: Scrum Primer ฉบับภาษาจีนกลาง
+    scrum_primer_in_traditional_chinese: Scrum Primer ฉบับภาษาจีนดั้งเดิม(ไต้หวัน ฮ่องกง หรือในคนจีนโพ้นทะเล)
+    scrum_primer_in_spanish: Scrum Primer ฉบับภาษาสเปน
+    scrum_primer_in_bulgarian: Scrum Primer ฉบับภาษาบัลแกเรีย
+    scrum_primer_in_vietnamese: Scrum Primer ฉบับภาษาเวียดนาม
+    scrum_primer_in_italian: Scrum Primer ฉบับภาษาอิตาเลียน
+    scrum_primer_in_korean: Scrum Primer ฉบับภาษาเกาหลี
+    scrum_primer_in_russian: Scrum Primer ฉบับภาษารัฐเซีย
+    currently_in_progress: อยู่ระหว่างการดำเนินการ
+    languages_in_progress:
+        japanese: ภาษาญี่ปุ่่น
+        thai: ภาษาไทย
+        korean: ภาษาเกาหลี
+        german: ภาษาเยอรมัน
+        vietnamese: ภาษาเวียดนาม
+
+translations:
+  simplified_chinese: ภาษาจีน
+  vietnamese: ภาษาเวียดนาม
+  japanese: ภาษาญี่ปุ่น
+  korean: ภาษาเกาหลี
+  thai: ภาษาไทย
+  french: ภาษาฝรั่งเศส
+  german: ภาษาเยอรมัน
+  spanish: ภาษาสเปน
+  bulgarian: ฉบับภาษาบัลแกเรีย
+  russian: ฉบับภาษารัฐเซีย
+
+overview:
+  scrum_primer_translations: การแปล Scrum Primer ฉบับภาษาต่างๆ
+  scrum_overview_picture: ภาพรวมของ Scrum
+  overview_picture_pdf_versions: ภาพรวมฉบับไฟล์ PDF
+  scrum_overview_v1: ภาพรวมของ Scrum เวอร์ชัน 1
+  scrum_overview_v2: ภาพรวมของ Scrum เวอร์ชัน 2
+  feel_free_to_use: อนุญาตให้นำไปใช้ต่อได้
+  work_is_licensed_under: ชิ้นงานเหล่าอยู่ภายใต้ลิขสิทธิ์ของ
+
+anime:
+  scrum_overview_anime_version: ภาพรวมของ Scrum - ฉบับอนิเมะ
+  scrum_overview_blue: ภาพรวมของ Scrum - ธีมสีฟ้า
+  scrum_overview_pink: ภาพรวมของ Scrum - ธีมสีชมพู
+  scrum_overview_green: ภาพรวมของ Scrum - ธีมสีเขียว
+  high_resolution_versions: ภาพรวมฉบับภาพรายละเอียดสูง
+
+about:
+  scrum_primer_creation: ที่มาของ Scrum Primer
+  scrum_primer_creation_description_1: เดิมที Scrum Primer ถูกสร้างโดย Pete Deemer และ Gabrielle Benefield สมัยที่ทั้งสองผลักดันการเปลี่ยนผ่านวิธีการทำงานที่ Yahoo สู่ Agile ขณะเดียวกัน Craig Larman และ Bas Vodde ที่กำลังเขียนหนังสือ Scaling Scrum เล่มแรก ทาง Craig และ Bas ต้องการคำนำเด็ดๆเกี่ยวกับ scrum เพื่อใช้เป็นแหล่งอ้างอิงในหนังสือ แต่ทั้งคู่ไม่อยากเขียนเองใหม่ ทั้งสี่คนจึงได้มาเจอกัน(Pete, Gabrielle, Craig, Bas) เพื่อนิยาม Scrum Primer ใหม่ด้วยกัน
+  scrum_primer_creation_description_2: Scrum Primer เวอร์ชัน 2.0 ถูกสร้างเพื่อ InfoQ และเพื่อให้สอดคล้องกับนิยามล่าสุดของ Scrum
+
+contact:
+  feedback_and_contributions: ข้อเสนอแนะและการมีส่วนร่วม
+  contact_and_contribute: <p>ในขณะนี้ผู้ดูแลหลักของหน้าเวบไซด์นี้คือ Bas Vodde ซึ่งสามารถติดต่อได้ที่ basv AT odd-e.com. </p><p>เรายินดีเป็นอย่างยิ่งสำหรับทุกการมีส่วนร่วมใน the primer และหน้าเวบไซด์นี้ สำหรับข้อมูลเพิ่มเติมสามารถดูได้ที่ <a href="https://github.com/basvodde/scrumprimer">github page</a>.</p>
