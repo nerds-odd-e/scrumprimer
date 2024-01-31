@@ -26,7 +26,7 @@ before_script:
   - ls robottests/ChromeProfiles/zh-cn/Default/
 
 rvm:
-  - 2.6.3
+  - 2.7.6
 
 python:
   - 2.7
